@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- ALT + 160: á
-ALT + 130: é
-ALT + 161: í
-ALT + 162: ó
-ALT + 163: ú -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable=no>
+    <!-- administrador de fechas -->
+    <meta name="date" content="2021-10-01"/>
+    <meta property="article:published_time" content="2021-10-01" />
     <!-- hoja de estilo -->
     <link rel="stylesheet" href="stylesheet.css">
-    
-    <title>AudioVintage.com</title>
+    <!-- titulo de la pagina -->
+    <title>¿Quien invento el tocadisco?</title>
+    <!-- descripcion de la pagina -->
+    <meta name="description" content="El 21 de noviembre de 1877, el norteamericano Tomás A. Edison fue el hombre que construyó y patentó por primera vez un medio para poder grabar el sonido y luego reproducirlo a voluntad"/>
+    <!-- palabras claves -->
+    <meta name="keywords" content="#####,######,######"/>
+    <!-- autor -->
+    <!-- <meta name="author" content="Nombre del autor" /> -->
+    <!-- copyright -->
+    <!-- <meta name="copyright" content="Propietario del copyright" /> -->
+    <!-- idex -->
+    <!-- <meta name="robots" content="index"/> -->
+    <!-- no index -->
+    <!-- <meta name="robots" content="noindex"/> -->
+    <!-- follow -->
+    <!-- <meta name="robots" content="follow"/> -->
+    <!-- no follow -->
+    <!-- <meta name="robots" content="nofollow"/> -->
+    <!-- follow y index justos -->
+    <!-- <meta name="robots" content="index,nofollow" /> -->
+    <!-- <meta name="robots" content="index,follow" /> -->
+    <!-- <meta name="robots" content="noindex,nofollow" /> -->
+    <!-- equiv de HTTP -->
+    <!-- control de cache -->
+    <!-- <meta http-equiv="cache-control" content="no-cache"/> -->
+    <!-- expires -->
+    <!-- <meta http-equiv="expires" content="tiempo de expiración en segundos"/> -->
+    <!-- Refresh -->
+    <!-- <meta http-equiv="refresh" content="10; url=http://www.ionos.es/"/> -->
+    <!-- Generador de meta-tags investigar -->
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
             <div class="header__logo">Audio Vintage</div>
     </header>
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <ul class="nav__ul">
-
-            <div class="nav__ul--div">
-                <li class="nav__li"><a class="nav__li--a" href="#">Blog</a></li>
-                <li class="nav__li"><a class="nav__li--a" href="#">toca discos</a></li>
-            </div>
-            <div class="nav__ul--div">
-                <li class="nav__li"><a class="nav__li--a" href="#">Caseteras</a></li>
-                <li class="nav__li"><a class="nav__li--a" href="#">discos</a></li>
-            </div>
-            
-            <div class="nav__ul--div">
-                <li class="nav__li"><a class="nav__li--a" href="#">Cassetes</a></li>
-                <li class="nav__li"><a class="nav__li--a" href="#">##########</a></li>
-            </div>
-
+            <li class="nav__li"><a class="nav__li--a" href="">Blog</a></li>
+            <li class="nav__li"><a class="nav__li--a" href="#">toca discos</a></li>
+            <li class="nav__li"><a class="nav__li--a" href="#">Caseteras</a></li>
+            <li class="nav__li"><a class="nav__li--a" href="#">discos</a></li>
+            <li class="nav__li"><a class="nav__li--a" href="#">Cassetes</a></li>
+            <li class="nav__li"><a class="nav__li--a" href="#">##########</a></li>
         </ul>
     </nav>
     <section class="espacioAside">
         <aside class="espacioAside__aside">
         </aside>
     </section>
-
     <section class="section">
         <header class="section__header">
             <div class="header--div1">
                 <div class="header__div1--fecha">
-                    <time datetime="2021-09-23">Actualizacion &nbsp; SEP. 22, 2021</time>
+                    <time datetime="2021-10-01" pubdate="pubdate">Actualizacion &nbsp; SEP. 22, 2021</time>
                 </div>
                 <h1 class="header__div1--h1">
-                    HISTORIA DEL TOCADISCO,  QUIEN LO INVETO,  EN QUE AÑO FUE CREADO EL INVENTO MAGICO DEL SIGLO XIX
-                </h1>
+                    HISTORIA DEL TOCADISCO,  EN QUE AÑO FUE CREADO EL INVENTO MAGICO DEL SIGLO XIX</h1>
             </div>
-
             <div class="header--div2">
                 <a class="header__div2--a">La eleccion de la gente</a>
                 <p class="header__div2--p"> Bienvenido a <a class="header__div2--p--a" href="#">AudioVintage</a>, donde compartimos nuestra pasión por la 
                     música, encontramos los productos mejor evaluados y destacamos nuestras mejores reseñas. 
                     (Puede obtener más información sobre reproductores de sonido <a class="header__div2--p--a" href="#">aquí</a>.)
-                    </p>
+                </p>
             </div>  
         </header>
-
-        <section class="section__contenidoIzquierdo">
-            <img class="contenidoIzquierdo__img" src="image/historiaDelTocadisco.jpg" alt="imgPrueba">
+        <main>
+            <section class="section__contenidoIzquierdo">
+                <figure>
+                    <img class="contenidoIzquierdo__img" src="image/historiaDelTocadisco.jpg" alt="imgPrueba">
+                    <figcaption class="contenidoIzquierdo__figcaption">Thomas Alba Edison</figcaption>
+                </figure>
+                
             <article class="contenidoIzquierdo__article">
                 <p class="contenidoIzquierdo__article--p">
                     El tocadiscos proviene de una serie de evoluciones del llamado <b>fonógrafo 
@@ -71,32 +89,31 @@ ALT + 163: ú -->
                     Emilio Berliner , desarrollaba un invento similar, llamado gramófono, que 
                     usaba como soporte un disco plano. Posteriores modificaciones y mejoras de 
                     estos inventos y de sus partes, han derivado en lo que hoy en día conocemos 
-                    como tocadiscos; también llamado giradiscos, pletina giradiscos o fonochasis. <br> <br>
-
-
-                    En 1877 el norteamericano <b>Tomás A. Edison fue el hombre que construyó y patentó por 
-                    primera vez un medio para poder grabar el sonido y luego reproducirlo</b>  a 
-                    voluntad. Lo llamó <b>fonógrafo</b>. <br> <br>
-                    
-                    Fue a partir de ese año, 1877, cuando se 
-                    sumaron personas que querían colaborar entusiasmadas con ese <b>invento casi 
+                    como tocadiscos; también llamado giradiscos, pletina giradiscos o fonochasis.  <br>
+                    <h2>quien creo el tocadisco.</h2>
+                    <p class="contenidoIzquierdo__article--p">
+                        En 1877 el norteamericano <b>Tomás A. Edison fue el hombre que construyó y patentó por 
+                        primera vez un medio para poder grabar el sonido y luego reproducirlo</b>  a 
+                        voluntad. Lo llamó <b>fonógrafo</b>. <br> <br>Fue a partir de ese año, 1877, cuando se 
+                        sumaron personas que querían colaborar entusiasmadas con ese <b>invento casi 
                         mágico del siglo</b> , que eran ingenieros, artistas, comerciantes, científicos, 
-                    cantantes, operarios y financistas. Fueron ellos los encargados de dar el 
-                    primer gran impulso a estas máquinas parlantes llamadas <b>"maquinas que hablan"</b>.
-                    <br> <br>
-                    Los tocadiscos fueron perfeccionándose a lo largo de los años, se utilizaron 
-                    varios materiales para la fabricación de los discos como lo fueron el papel 
-                    de estaño luego le siguió el tubo de cartón parafinado y en 1890 el cilindro 
-                    de cera macizo, quien sería el feliz encargado de comenzar con la difusión comercial fonográfica.
-                    <br> <br>
-                    <b>El tocadiscos como lo conocemos apareció por primera vez en 1925</b>, justo cuando 
-                    también aparecen los primeros amplificadores de válvulas.
-                    <div class="contenidoIzquierdo__article--p--DivImg">
-                        <img  src="image/tocaDisco1925.jpeg" alt="tocadisco 1925" > 
-                        creacion , TocaDisco 1925
-                    </div>
-                    
-
+                        cantantes, operarios y financistas. Fueron ellos los encargados de dar el 
+                        primer gran impulso a estas máquinas parlantes llamadas <b>"maquinas que hablan"</b>.<br> <br>
+                        Los tocadiscos fueron perfeccionándose a lo largo de los años, se utilizaron 
+                        varios materiales para la fabricación de los discos como lo fueron el papel 
+                        de estaño luego le siguió el tubo de cartón parafinado y en 1890 el cilindro 
+                        de cera macizo, quien sería el feliz encargado de comenzar con la difusión comercial fonográfica. <br>
+                    </p> 
+                    <h2>En que año se creo el tocadisco</h2>
+                    <p class="contenidoIzquierdo__article--p">
+                        <b>El tocadiscos como lo conocemos apareció por primera vez en 1925</b>, justo cuando 
+                        también aparecen los primeros amplificadores de válvulas.
+                    </p>
+                    <h3>primer tocadisco</h3>
+                    <figure class="contenidoIzquierdo__article--p--DivImg">
+                        <img  class="contenidoIzquierdo__article--p--DivImg--Img" src="image/tocaDisco1925.jpeg" alt="primer tocadisco" > 
+                        <figcaption>TocaDisco 1925</figcaption>
+                    </figure>
                 </p>
                 <p class="contenidoIzquierdo__article--p--decripcionDePagina">
                     <a class="article__p--decripcionDePagina--a" href="#">Audio Vintage</a>  
@@ -104,70 +121,51 @@ ALT + 163: ú -->
                     lectores se informen sobre tocadiscos y cassetes, el principal objetivo 
                     de Audio Vintage es trasmitir nuestra pasión por la música y compartirla 
                     con el mundo, recuerde que los precios presentadas en esta web son volátiles 
-                    y están sujetas a cambios,   
+                    y están sujetas a cambios, 
                     Audio Vintage
-                    , hará su mejor trabajo en presentar precios actualizados,
-
-                    cada producto editorial se selecciona de forma independiente. Si compra algo a 
-                    través de nuestros enlaces, Audio Vintage
-                    puede ganar una comisión de afiliado, 
                     participa en el programa de asociados de Amazon Services LLC, un programa de anuncios 
                     de afiliados está diseñado para proveer los medios a las páginas webs 
                     para obtener ingresos por publicidad y añadiendo links a amazon.es.
                 </p>
             </article>
-
         </section>
-    
             <section class="section__contenidoDerecho">
-                
-                    <h2 class="contenidoDerecho__h2">Artículos populares</h2>
-                    <a class="contenidoDerecho__articulosPopulares" href="#">mejores tocadisco segun el año eqeu fuero creados</a>
-                    <a class="contenidoDerecho__articulosPopulares" href="#">la ceacion y hstoria de los casettes</a>
-                    <a class="contenidoDerecho__articulosPopulares" href="#">diez motivos para comprar un tocadisco (no te esperasla ultima)</a>
-                    <a class="contenidoDerecho__articulosPopulares" href="#">los dicos de vinilo mas vendidos d ela hstoria</a>
-                    <a class="contenidoDerecho__articulosPopulares" href="#">como se fabican los iscos de vinillo</a>
-                    <a class="contenidoDerecho__articulosPopulares" href="#">diez motivos para comprar un tocadisco no te esperasla ultima</a>
-                    <a class="contenidoDerecho__articulosPopulares" href="#">los dicos de vinilo mas vendidos d ela hstoria</a>
-                    <a class="contenidoDerecho__articulosPopulares" href="#">como se fabican los iscos de vinillo</a>
-                
-            </section>        
-
+                <div class="contenidoDerecho__h2">Artículos populares</div>
+                <ul>
+                    <li><a class="contenidoDerecho__articulosPopulares" href="#">mejores tocadisco segun el año eqeu fuero creados</a></li>
+                    <li><a class="contenidoDerecho__articulosPopulares" href="#">la ceacion y hstoria de los casettes</a></li>
+                    <li><a class="contenidoDerecho__articulosPopulares" href="#">diez motivos para comprar un tocadisco (no te esperasla ultima)</a></li>
+                    <li><a class="contenidoDerecho__articulosPopulares" href="#">los dicos de vinilo mas vendidos d ela hstoria</a></li>
+                    <li><a class="contenidoDerecho__articulosPopulares" href="#">como se fabican los iscos de vinillo</a></li>
+                    <li><a class="contenidoDerecho__articulosPopulares" href="#">diez motivos para comprar un tocadisco no te esperasla ultima</a></li>
+                    <li><a class="contenidoDerecho__articulosPopulares" href="#">los dicos de vinilo mas vendidos d ela hstoria</a></li>
+                    <li><a class="contenidoDerecho__articulosPopulares" href="#">como se fabican los iscos de vinillo</a></li>
+                </ul>
+            </section> 
+        </main>       
     </section>
-
     <div class="pieDePagina__historiasRelacionadas">
-        <h3 class="pieDePagina__historiasRelacionadas--h3">HISTORIAS RELACIONADAS</h3>
+        <div class="pieDePagina__historiasRelacionadas--h3">HISTORIAS RELACIONADAS</div>
         <div class="pieDePagina__historiasRelacionadas--div" ></div>
         <div class="pieDePagina__historiasRelacionadas--div"></div>
         <div class="pieDePagina__historiasRelacionadas--div"></div>
     </div>
 
 <footer class="footer">
-        <header class="header">
-            <div class="header__logo">Audio Vintage</div>
-            
+    <header class="headerFooter">
+        <div class="header__logo">Audio Vintage</div>
     </header>
-    <nav class="nav">
-        <ul class="nav__ul">
-
-            <div class="nav__ul--div">
-                <li class="nav__li"><a class="nav__li--a" href="#">Blog</a></li>
-                <li class="nav__li"><a class="nav__li--a" href="#">toca discos</a></li>
-            </div>
-            <div class="nav__ul--div">
-                <li class="nav__li"><a class="nav__li--a" href="#">Caseteras</a></li>
-                <li class="nav__li"><a class="nav__li--a" href="#">discos</a></li>
-            </div>
-            
-            <div class="nav__ul--div">
-                <li class="nav__li"><a class="nav__li--a" href="#">Cassetes</a></li>
-                <li class="nav__li"><a class="nav__li--a" href="#">##########</a></li>
-            </div>
-
+    <nav class="navFooter">
+        <ul class="nav__ulFooter">
+            <li class="nav__li"><a class="nav__li--a" href="#">Blog</a></li>
+            <li class="nav__li"><a class="nav__li--a" href="#">toca discos</a></li>
+            <li class="nav__li"><a class="nav__li--a" href="#">Caseteras</a></li>
+            <li class="nav__li"><a class="nav__li--a" href="#">discos</a></li>
+            <li class="nav__li"><a class="nav__li--a" href="#">Cassetes</a></li>
+            <li class="nav__li"><a class="nav__li--a" href="#">##########</a></li>
         </ul>
     </nav>
 </footer>
-
-
+<script src="index.js"></script>
 </body>
 </html>
