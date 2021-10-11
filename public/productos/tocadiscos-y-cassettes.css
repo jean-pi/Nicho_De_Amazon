@@ -1,6 +1,6 @@
 *{margin: 0;padding: 0;list-style: none;border: none;outline: none;box-sizing: border-box;}
-@font-face {font-family:cooperLightBT ;src: url(/fonts/CooperLightBT.ttf);}
-@font-face {font-family:send;src: url(/fonts/send.ttf);}
+@font-face {font-family:cooperLightBT ;src: url(/public/fonts/CooperLightBT.ttf);}
+@font-face {font-family:send;src: url(/public/fonts/send.ttf);}
 /* -------------------------------------------------------HEADER ASIDE------------------------------------------------------  */
 body{
     display: flex;
@@ -66,204 +66,32 @@ h2{
         background-color: rgb(233, 233, 233);
         height: 100%;
     }
-.section__historiaDeLosTocadiscos{
+.section{
     width: 1100px;
-    height:490vh;
+    height:130vh;
+    display: flex;
 }
-.section__quienInventoElCassette{
+    .section__filtros{
+        width: 20%;
+        
+        background-color: rgb(233, 233, 233);
+    }
+    .section__productos{
+        width: 80%;
+        background-color: rgb(245, 245, 245);
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+    }
+        .section__productos div{
+            background-color: thistle;
+            margin: 5px;
+        }
+
+.footer{
     width: 1100px;
-    height: 460vh;
 }
-    .section__header{
-        display: flex;
-        border-top: 3px solid rgb(0, 0, 0);
-        border-bottom: 1px solid rgb(146, 146, 146);
-    }
-        .header--div1{
-            width: 70%;
-        }
-            .header__div1--fecha{
-                margin:10px 0px 19px ;
-            }   
-                .header__div1--fecha time{
-                    font-size: 3.5mm;
-                    font-family: send;
-                }
-            .header__div1--h1{
-                font-size: 10.5mm;
-                font-family: cooperLightBT ;
-                font-weight:100;
-                margin-bottom: 20px;
-            }   
-        .header--div2{
-            width: 30%;
-            padding: 0 0 0 40px;
-            margin: 25px 0 25px 0px;
-            border-left: 1px solid rgb(146, 146, 146);
-        }
-            .header__div2--a{
-                font-family: cooperLightBT ;
-                font-size: 22px;
-            }
-            .header__div2--a::after{
-                content: '';
-                background-color: lightsalmon;
-                display: block;
-                margin-top: 5px;
-                width: 100px;
-                height: 1.4px;
-            }
-            .header__div2--a:hover{
-                text-decoration: none;
-                color: lightsalmon;
-            }
-            .header__div2--p{
-                font-family: send;
-                font-size:3.3mm;
-                font-style:italic;
-                margin-top: 10px;
-            }
-                .header__div2--p--a{
-                    color: rgb(0, 0, 0);
-                    
-                }
-                .header__div2--p--a:hover{
-                    color: rgb(255, 166, 0);
-                }
-    .section__contenidoIzquierdo{
-        float: left;
-        width: 70%;
-        padding: 3% 5% 0 0;
-    }
-        .contenidoIzquierdo__img{
-            width: 100%;
-        }
-        .contenidoIzquierdo__figcaption{
-            font-size: 3mm;
-            font-family: send;
-        }
-        .contenidoIzquierdo__article{
-            width: 85%;
-            margin: 5% 0 0 15%;
-            padding: 10px 20px 20px 20px ;
-        }
-            .contenidoIzquierdo__article--p{
-                font-size: 4.3mm;
-                font-family:Georgia, 'Times New Roman', Times, serif;
-                line-height: 30px;
-            }
-                .contenidoIzquierdo__article--p--DivImg{
-                    display: flex;
-                    align-items: flex-start;
-                    flex-direction:column ;
-                    margin: 5% 0 2% 0;
-                    font-size: 3mm;
-                    width: 50%;
-                } 
-                .contenidoIzquierdo__article--p--DivImg--Img{
-                    width: 100%;
-                    
-                }
-        .contenidoIzquierdo__article--p--decripcionDePagina{
-            font-family:cooperLightBT ;
-            margin: 10% ;
-            font-style: italic;
-            font-size: 4mm;
-            line-height: 29px;
-        }
-        .contenidoIzquierdo__article--p--decripcionDePagina::before{
-            content: '';
-            background-color: lightsalmon;
-            display: block;
-            margin-bottom: 7px;
-            width: 150px;
-            height: 3px;
-        }
-        .article__p--decripcionDePagina--a{
-            color: rgb(0, 0, 0);
-        }
-            .article__p--decripcionDePagina--a:hover{
-                color: lightsalmon;
-            }
-    .section__contenidoDerecho{
-        width: 30%;
-        float: left;
-        padding: 1.5% 0% 0% 3.5%;
-    }   
-        .productosEscritorio{
-            height: 70vh;
-            margin: 5% 0 5% 0;
-            background-color: rgb(226, 226, 226);
-        }
-        .contenidoDerecho__h2{
-            font-family:cooperLightBT ;
-            margin-bottom: 20px;
-            font-size: 6.5mm;
-            font-weight: 500;
-        }
-        .contenidoDerecho__articulosPopulares{
-            text-decoration: none;
-            font-family: cooperLightBT;
-            display: block;
-            font-size: 4.5mm;
-            margin: 10px 0 10px 0;
-            color: rgb(0, 0, 0);
-        }
-        .contenidoDerecho__articulosPopulares:hover{
-            text-decoration: underline;
-        }
-.pieDePagina__historiasRelacionadas{
-    border-top: 1px solid rgb(0, 0, 0);
-    width: 1100px;
-    height: 100vh;
-}
-    .pieDePagina__historiasRelacionadas--h3{
-        font-family: cooperLightBT;
-        margin: 20px 0 0 20px ;
-        font-weight:700;
-        font-size: 5.6mm;
-    }
-    .pieDePagina__historiasRelacionadas--div{
-        width: 96%;
-        height: 25%;
-        margin: 20px 2% 20px 2%;
-        border-bottom: .1px solid rgb(177, 177, 177);
-        display: flex;
-        padding-left: 1%;
-    }
-    .historiasRelacionadas__texto{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-        .historiasRelacionas__texto--textito{
-            font-family: send;
-            font-size: 3.5mm;
-        }
-        .historiasRelacionadas__texto--a{
-            text-decoration:none;
-            font-family: cooperLightBT;
-            font-size: 9mm;
-            color: rgb(0, 0, 0);
-            
-        }
-        .historiasRelacionadas__texto--a:hover{
-            text-decoration:underline coral;
-        }
-    .historiasRelacionadas__divImg{
-        width: 30%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-        .historiasRelacionadas__divImg--img{
-            width: 80%;
-        }
-    .footer{
-        width: 1100px;
-    }
     .headerFooter{
         height: 8vh;
         display: flex;
@@ -288,6 +116,7 @@ h2{
         margin: 20px 0 20px 0;
         text-align: center;
         font-family: send;
+        font-size: 3mm;
     }
     /* -------------------------------------------------------RESPONSIVE 1200px ------------------------------------------------------  */
     @media (max-width:1200px) {
@@ -330,15 +159,10 @@ body{
     margin-left: 5%;
     margin-top: 11vh;
 }
-.section__historiaDeLosTocadiscos{
+.section{
     width: 86%;
     margin-left: 7%;
-    height: 4100px;
-}
-.section__quienInventoElCassette{
-    width: 86%;
-    margin-left: 7%;
-    height: 3800px;
+    height: 1000px;
 }
         .header--div1{
             width: 100%;
@@ -382,9 +206,6 @@ body{
 }
 /* -------------------------------------------------------RESPONSIVE 764px ------------------------------------------------------  */
 @media(max-width:764px){
-    h2{
-        font-size: 7mm;
-    }
 .header{
     width: 100%;
     height: 7vh;
@@ -420,21 +241,17 @@ body{
     margin-left: 1%;
     margin-top: 12vh;
 }
-.section__historiaDeLosTocadiscos{
+.section{
     width: 96%;
     margin-left: 2%;
-    margin-bottom: 60vh;
+    height: 1000px;
 } 
-.section__quienInventoElCassette{
-    width: 96%;
-    margin-left: 2%;
-    margin-bottom: 80vh;
-}
+
                 .header__div1--fecha time{
                     font-size: 4mm;
                 }
             .header__div1--h1{
-                font-size: 7.5mm;
+                font-size: 8.5mm;
             }   
         .header--div2{
             display: none;
@@ -450,7 +267,7 @@ body{
             margin: 0% 0 0 0%;
         }
                 .contenidoIzquierdo__article--p--DivImg{
-                    width: 60%;
+                    width: 80%;
                 } 
     .section__contenidoDerecho{
         display: none;
@@ -462,9 +279,6 @@ body{
     .pieDePagina__historiasRelacionadas--h3{
         font-size: 4.5mm;
     }
-        .historiasRelacionadas__texto{
-            width: 50%;
-        }
             .historiasRelacionas__texto--textito{
                 display: none;
             }
@@ -474,12 +288,10 @@ body{
             .historiasRelacionadas__texto--a:hover{
                 text-decoration:underline coral;
             }
-            .historiasRelacionadas__divImg{
-                width: 50%;
-            }
             .historiasRelacionadas__divImg--img{
                 width: 100%;
             }
+
 
 
     .headerFooter{

@@ -1,6 +1,6 @@
 *{margin: 0;padding: 0;list-style: none;border: none;outline: none;box-sizing: border-box;}
-@font-face {font-family:cooperLightBT ;src: url(/fonts/CooperLightBT.ttf);}
-@font-face {font-family:send;src: url(/fonts/send.ttf);}
+@font-face {font-family:cooperLightBT ;src: url(/public/fonts/CooperLightBT.ttf);}
+@font-face {font-family:send;src: url(/public/fonts/send.ttf);}
 /* -------------------------------------------------------HEADER ASIDE------------------------------------------------------  */
 body{
     display: flex;
@@ -59,7 +59,7 @@ h2{
             }
 .espacioAside{
     width: 1100px;
-    height: 25vh;
+    height: 15vh;
     padding: 1%;
 }
     .espacioAside__aside{
@@ -68,11 +68,15 @@ h2{
     }
 .section__historiaDeLosTocadiscos{
     width: 1100px;
-    height:490vh;
+    height:3400px;
 }
 .section__quienInventoElCassette{
     width: 1100px;
-    height: 460vh;
+    height: 3300px;
+}
+.section__comoFuncionaUnTocadisco{
+    width: 1100px;
+    height: 3600px;
 }
     .section__header{
         display: flex;
@@ -161,7 +165,7 @@ h2{
                     width: 50%;
                 } 
                 .contenidoIzquierdo__article--p--DivImg--Img{
-                    width: 100%;
+                    width: 80%;
                     
                 }
         .contenidoIzquierdo__article--p--decripcionDePagina{
@@ -191,7 +195,7 @@ h2{
         padding: 1.5% 0% 0% 3.5%;
     }   
         .productosEscritorio{
-            height: 70vh;
+            height: 80vh;
             margin: 5% 0 5% 0;
             background-color: rgb(226, 226, 226);
         }
@@ -226,7 +230,7 @@ h2{
     .pieDePagina__historiasRelacionadas--div{
         width: 96%;
         height: 25%;
-        margin: 20px 2% 20px 2%;
+        margin: 0px 2% 0px 2%;
         border-bottom: .1px solid rgb(177, 177, 177);
         display: flex;
         padding-left: 1%;
@@ -288,6 +292,7 @@ h2{
         margin: 20px 0 20px 0;
         text-align: center;
         font-family: send;
+        font-size: 3mm;
     }
     /* -------------------------------------------------------RESPONSIVE 1200px ------------------------------------------------------  */
     @media (max-width:1200px) {
@@ -323,7 +328,7 @@ body{
     background-position: bottom;
 }
                 .nav__li--a{
-                    font-size: 5mm;
+                    font-size: 4.1mm;
                 }
 .espacioAside{
     width: 90%;
@@ -339,6 +344,11 @@ body{
     width: 86%;
     margin-left: 7%;
     height: 3800px;
+}
+.section__comoFuncionaUnTocadisco{
+    width: 86%;
+    margin-left: 7%;
+    height: 4200px;
 }
         .header--div1{
             width: 100%;
@@ -363,6 +373,7 @@ body{
                 height: 180px;
                 margin-top: 5vh;
                 background-color: rgb(233, 233, 233);
+                margin: 30px 0 30px 0;
             }
                 .contenidoIzquierdo__article--p--DivImg{
                     font-size: 3.5mm;
@@ -373,8 +384,14 @@ body{
 .pieDePagina__historiasRelacionadas{
     width: 90%;
     margin-left: 5%;
-    
 }
+    .historiasRelacionadas__texto--a{
+        text-decoration:none;
+        font-family: cooperLightBT;
+        font-size: 7mm;
+        color: rgb(0, 0, 0);
+
+    }
     .footer{
         width: 90%;
         margin-left: 5%;
@@ -423,12 +440,17 @@ body{
 .section__historiaDeLosTocadiscos{
     width: 96%;
     margin-left: 2%;
-    margin-bottom: 60vh;
+    margin-bottom: 300px;
 } 
 .section__quienInventoElCassette{
     width: 96%;
     margin-left: 2%;
-    margin-bottom: 80vh;
+    margin-bottom: 500px;
+}
+.section__comoFuncionaUnTocadisco{
+    width: 96%;
+    margin-left: 2%;
+    height: 4300px;
 }
                 .header__div1--fecha time{
                     font-size: 4mm;
@@ -444,11 +466,15 @@ body{
     }
             .contenidoIzquierdo__img{
                 width: 100%;
+                
             }
         .contenidoIzquierdo__article{
             width: 100%;
             margin: 0% 0 0 0%;
         }
+            .contenidoIzquierdo__article--p{
+                font-size: 4.2mm;
+            }
                 .contenidoIzquierdo__article--p--DivImg{
                     width: 60%;
                 } 

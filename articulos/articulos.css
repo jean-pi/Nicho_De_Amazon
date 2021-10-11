@@ -1,6 +1,7 @@
 *{margin: 0;padding: 0;list-style: none;border: none;outline: none;box-sizing: border-box;}
 @font-face {font-family:cooperLightBT ;src: url(/fonts/CooperLightBT.ttf);}
 @font-face {font-family:send;src: url(/fonts/send.ttf);}
+/* euro = alt 0128 */
 /* -------------------------------------------------------HEADER ASIDE------------------------------------------------------  */
 body{
     display: flex;
@@ -11,6 +12,24 @@ h2{
     font-family: cooperLightBT;
     font-weight: 100;
     margin: 35px 0 10px 0;
+}
+.figure{
+    display: flex;
+    align-items: flex-start;
+    flex-direction:column ;
+    margin: 5% 0 2% 0;
+    font-size: 3mm;
+    width: 50%;
+}
+figcaption{
+    font-size: 3mm;
+    font-family: send;
+}
+.figure img{
+    width: 80%;
+}
+.productos__celularTableb{
+    display: none;
 }
 
 .header{
@@ -27,10 +46,10 @@ h2{
     }
 .nav{
     height:3.5vh;
-    width: 1100px;
+    width: 100%;
     position: sticky;
-    top: 0;
     background-color: rgb(255, 255, 255);
+    top: 0px;
     background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
     background-position: top;
     background-size: 4px 1px;
@@ -41,6 +60,7 @@ h2{
     background-position: bottom;
 }
     .nav__ul{
+        margin-top: 2px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -57,26 +77,19 @@ h2{
                 color: rgb(255, 166, 0);
                 text-decoration:underline;
             }
-.espacioAside{
-    width: 1100px;
-    height: 25vh;
-    padding: 1%;
+.cabeceraPublicidad{
+    padding: 20px 0 20px 0;
 }
-    .espacioAside__aside{
-        background-color: rgb(233, 233, 233);
-        height: 100%;
-    }
-.section__historiaDeLosTocadiscos{
-    width: 1100px;
-    height:490vh;
+.cabeceraPublicidad__celular{
+    display: none;
 }
-.section__quienInventoElCassette{
+.section{
     width: 1100px;
-    height: 460vh;
 }
+
     .section__header{
         display: flex;
-        border-top: 3px solid rgb(0, 0, 0);
+        border-top: 3px solid rgb(0, 0, 0) ;
         border-bottom: 1px solid rgb(146, 146, 146);
     }
         .header--div1{
@@ -90,7 +103,7 @@ h2{
                     font-family: send;
                 }
             .header__div1--h1{
-                font-size: 10.5mm;
+                font-size: 10mm;
                 font-family: cooperLightBT ;
                 font-weight:100;
                 margin-bottom: 20px;
@@ -101,17 +114,9 @@ h2{
             margin: 25px 0 25px 0px;
             border-left: 1px solid rgb(146, 146, 146);
         }
-            .header__div2--a{
+            .header__div2--titulo{
                 font-family: cooperLightBT ;
                 font-size: 22px;
-            }
-            .header__div2--a::after{
-                content: '';
-                background-color: lightsalmon;
-                display: block;
-                margin-top: 5px;
-                width: 100px;
-                height: 1.4px;
             }
             .header__div2--a:hover{
                 text-decoration: none;
@@ -135,35 +140,20 @@ h2{
         width: 70%;
         padding: 3% 5% 0 0;
     }
-        .contenidoIzquierdo__img{
+        .imagenPrincipal{
             width: 100%;
         }
-        .contenidoIzquierdo__figcaption{
-            font-size: 3mm;
-            font-family: send;
-        }
+        
         .contenidoIzquierdo__article{
             width: 85%;
             margin: 5% 0 0 15%;
-            padding: 10px 20px 20px 20px ;
         }
             .contenidoIzquierdo__article--p{
                 font-size: 4.3mm;
                 font-family:Georgia, 'Times New Roman', Times, serif;
                 line-height: 30px;
-            }
-                .contenidoIzquierdo__article--p--DivImg{
-                    display: flex;
-                    align-items: flex-start;
-                    flex-direction:column ;
-                    margin: 5% 0 2% 0;
-                    font-size: 3mm;
-                    width: 50%;
-                } 
-                .contenidoIzquierdo__article--p--DivImg--Img{
-                    width: 100%;
-                    
-                }
+            }               
+                
         .contenidoIzquierdo__article--p--decripcionDePagina{
             font-family:cooperLightBT ;
             margin: 10% ;
@@ -189,19 +179,73 @@ h2{
         width: 30%;
         float: left;
         padding: 1.5% 0% 0% 3.5%;
-    }   
-        .productosEscritorio{
-            height: 70vh;
-            margin: 5% 0 5% 0;
-            background-color: rgb(226, 226, 226);
+    }  
+        .contenidoDerecho__producto{
+            width: 100%;
+            padding: 15px 0 0 0 ;
+            display: flex;
+            background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 4px 1px;
+            background-repeat: repeat-x;
         }
-        .contenidoDerecho__h2{
+            .producto__producto{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+            }
+                .producto__producto a{
+                    text-decoration:underline coral 2px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .producto__producto a div{
+                    width: 90px;
+                    height: 20px;
+                    margin-bottom: 5px;
+                    font-family:cooperLightBT ;
+                    font-size: 3.5mm;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    border: 1px solid rgb(0, 0, 0);
+                    box-shadow: 2px 2px rgb(0, 0, 0);
+                }
+                    .producto__producto img{
+                        width: 84%;
+                        
+                    }
+                    .producto__producto p{
+                        text-align: center;
+                        font-size: 3.5mm;
+                        margin-bottom:7% ;
+                        color: rgb(0, 0, 0);
+                        font-family:cooperLightBT ;
+                    }
+            .producto__verTodosLosProductosSimilares{
+                width: 50%;
+                height: 37px;
+                font-family:cooperLightBT ;
+                font-size: 3.2mm;
+                margin-top: 40px;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                border: 1px solid rgb(0, 0, 0);
+                box-shadow: 3px 3px rgb(0, 0, 0);
+                text-decoration: none;
+            }
+
+
+            
+        .contenidoDerecho__articulosPopulares{
             font-family:cooperLightBT ;
             margin-bottom: 20px;
             font-size: 6.5mm;
             font-weight: 500;
+            margin: 40px 0 40px 0;
         }
-        .contenidoDerecho__articulosPopulares{
+        .articulosPopulares__li--a{
             text-decoration: none;
             font-family: cooperLightBT;
             display: block;
@@ -209,9 +253,10 @@ h2{
             margin: 10px 0 10px 0;
             color: rgb(0, 0, 0);
         }
-        .contenidoDerecho__articulosPopulares:hover{
+        .articulosPopulares__li--a:hover{
             text-decoration: underline;
         }
+
 .pieDePagina__historiasRelacionadas{
     border-top: 1px solid rgb(0, 0, 0);
     width: 1100px;
@@ -226,7 +271,7 @@ h2{
     .pieDePagina__historiasRelacionadas--div{
         width: 96%;
         height: 25%;
-        margin: 20px 2% 20px 2%;
+        margin: 0px 2% 0px 2%;
         border-bottom: .1px solid rgb(177, 177, 177);
         display: flex;
         padding-left: 1%;
@@ -247,7 +292,6 @@ h2{
             font-family: cooperLightBT;
             font-size: 9mm;
             color: rgb(0, 0, 0);
-            
         }
         .historiasRelacionadas__texto--a:hover{
             text-decoration:underline coral;
@@ -270,7 +314,7 @@ h2{
         justify-content: center;
         align-items: center;
         background-color: rgb(255, 255, 255);
-    }
+    } 
     .navFooter{
         height:3.5vh;
         background-color: rgb(255, 255, 255);
@@ -288,57 +332,107 @@ h2{
         margin: 20px 0 20px 0;
         text-align: center;
         font-family: send;
-    }
+        font-size: 3mm;
+    } 
     /* -------------------------------------------------------RESPONSIVE 1200px ------------------------------------------------------  */
     @media (max-width:1200px) {
 body{
     align-items: flex-start;
 }
 .header{
-    height: 6vh;
-    position: fixed;
+    height: 60px;
+    /* transition: .1s; */
+}
+/* .headerAnimacion{
+    height: 60px;
+} */
+/* .header__logo{
     transition: .1s;
+} */
+/* .headerAnimacion div{
+    font-size: 7mm;
+} */
+
+.productos__celularTableb{
+    width: 100%;
+    height: 220px;
+    margin-top: 40px;
+    display: flex;
+    background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 4px 1px;
+    background-repeat: repeat-x;
 }
-.headerAnimacion{
-    height: 3.5vh;
-    border-bottom: 0px solid rgb(189, 189, 189);
-}
-.header__logo{
-    transition: .1s;
-}
-.headerAnimacion div{
-    font-size: 6mm;
-}
+    .producto__producto{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px;
+    }
+        .producto__producto a{
+            text-decoration:underline coral 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .producto__producto img{
+                width: 80%;
+                margin-left: 8%;
+            }
+            .producto__producto p{
+                text-align: center;
+                font-size: 3.7mm;
+                margin-bottom:7% ;
+                color: rgb(0, 0, 0);
+                font-family:cooperLightBT ;
+            }
+            .producto__producto div{
+                width: 70px;
+                height: 20px;
+                font-family:cooperLightBT ;
+                font-size: 3.5mm;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                border: 1px solid rgb(0, 0, 0);
+                box-shadow: 2px 2px rgb(0, 0, 0);
+            }
+    .producto__verTodosLosProductosSimilares{
+        width: 70%;
+        height: 65px;
+        font-family:cooperLightBT ;
+        font-size: 4mm;
+        margin-top: 40px;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        text-decoration: underline coral;
+        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 3px 3px rgb(0, 0, 0);
+    }
 .nav{
     width: 100%;
-    height: 4.5vh;
-    position:fixed;
-    margin-top:6vh;
+    height: 30px;
+    position: sticky;
+    top: 0px;
     transition: .1s;
-    
 }
 .navAnimacion{
-    margin-top: 3.5vh;
-    height: 3.5vh;
     background-position: bottom;
 }
-                .nav__li--a{
-                    font-size: 5mm;
-                }
-.espacioAside{
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 11vh;
+    .nav__li--a{
+        font-size: 4.1mm;
+    }
+.cabeceraPublicidad{
+    padding: 0px 20pxpx 20px 0px;
+    display: flex;
+    Align-content: center;
+    text-align: center;
 }
-.section__historiaDeLosTocadiscos{
+iframe{
+    align-items: center;
+}
+.section{
     width: 86%;
     margin-left: 7%;
-    height: 4100px;
-}
-.section__quienInventoElCassette{
-    width: 86%;
-    margin-left: 7%;
-    height: 3800px;
 }
         .header--div1{
             width: 100%;
@@ -359,11 +453,6 @@ body{
         .contenidoIzquierdo__article{
             margin: 5% 0 0 15%;
         }
-            .productos__celularTableb{
-                height: 180px;
-                margin-top: 5vh;
-                background-color: rgb(233, 233, 233);
-            }
                 .contenidoIzquierdo__article--p--DivImg{
                     font-size: 3.5mm;
                 } 
@@ -373,8 +462,14 @@ body{
 .pieDePagina__historiasRelacionadas{
     width: 90%;
     margin-left: 5%;
-    
 }
+    .historiasRelacionadas__texto--a{
+        text-decoration:none;
+        font-family: cooperLightBT;
+        font-size: 7mm;
+        color: rgb(0, 0, 0);
+
+    }
     .footer{
         width: 90%;
         margin-left: 5%;
@@ -385,51 +480,44 @@ body{
     h2{
         font-size: 7mm;
     }
+    .figure{
+        width: 70%;
+    }
 .header{
     width: 100%;
     height: 7vh;
-    position: fixed;
     top: 0px;
     transition: .1s;
-}
-.headerAnimacion{
-    height: 4.5vh;
 }
 .nav{
     width: 100%;
     overflow-x:scroll;
     overflow-y:hidden;
-    position:fixed;
-    margin-top: 7vh;
+    position:sticky;
     display: flex;
     transition: .1s;
-    border-bottom: 1px solid rgb(181, 181, 181);
-    height: 4.7vh;
+    height: 5vh;
 }
-.navAnimacion{
-    position:fixed;
-    margin-top: 4.5vh;
-    display: flex;
-    background-position: top;
+    .nav__li{
+        margin: 0 20px 0 20px ;
+    }
+        .nav__li--a{
+            font-size: 4.5mm;
+        }
+
+.cabeceraPublicidad{
+    display: none;
 }
-            .nav__li{
-                margin: 0 20px 0 20px ;
-            }
-.espacioAside{
-    width: 98%;
-    margin-left: 1%;
-    margin-top: 12vh;
+.cabeceraPublicidad__celular{
+    display: unset;
+    margin: 10px 0 10px 0;
 }
-.section__historiaDeLosTocadiscos{
-    width: 96%;
-    margin-left: 2%;
-    margin-bottom: 60vh;
+
+.section{
+    width: 88%;
+    margin-left: 6%;
 } 
-.section__quienInventoElCassette{
-    width: 96%;
-    margin-left: 2%;
-    margin-bottom: 80vh;
-}
+
                 .header__div1--fecha time{
                     font-size: 4mm;
                 }
@@ -442,13 +530,20 @@ body{
     .section__contenidoIzquierdo{
         width: 100%;
     }
-            .contenidoIzquierdo__img{
-                width: 100%;
-            }
+        .productoEliminadoEnMovil{
+            display: none;
+        }
+        .producto__verTodosLosProductosSimilares{
+            width: 70%;
+            height: 78px;
+        }
         .contenidoIzquierdo__article{
             width: 100%;
-            margin: 0% 0 0 0%;
+            margin: 5% 0 0 0%;
         }
+            .contenidoIzquierdo__article--p{
+                font-size: 4mm;
+            }
                 .contenidoIzquierdo__article--p--DivImg{
                     width: 60%;
                 } 
@@ -475,10 +570,7 @@ body{
                 text-decoration:underline coral;
             }
             .historiasRelacionadas__divImg{
-                width: 50%;
-            }
-            .historiasRelacionadas__divImg--img{
-                width: 100%;
+                width: 60%;
             }
 
 
@@ -505,5 +597,8 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .nav__liFooter{
+        margin-top: 10px;
     }
 }

@@ -1,6 +1,6 @@
 *{margin: 0;padding: 0;list-style: none;border: none;outline: none;box-sizing: border-box;}
-@font-face {font-family:cooperLightBT ;src: url(/fonts/CooperLightBT.ttf);}
-@font-face {font-family:send;src: url(/fonts/send.ttf);}
+@font-face {font-family:cooperLightBT ;src: url(fonts/CooperLightBT.ttf);}
+@font-face {font-family:send;src: url(fonts/send.ttf);}
 /* -------------------------------------------------------HEADER ASIDE------------------------------------------------------  */
 body{
     display: flex;
@@ -60,7 +60,6 @@ h2{
 
 .section{
     width: 1100px;
-    height:220vh;
     margin-top: 5vh;
 }
     .section__contenidoIzquierdo{
@@ -81,7 +80,7 @@ h2{
         .articulosPopulares__articulo1{
             grid-row: 1/3;
             grid-column: 1/3;
-            background: url(./img/historiaDelTocadisco.jpg);
+            background: url(zhistoriaDelTocadisco.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
@@ -109,7 +108,7 @@ h2{
 
         .articulosPopulares__articulo2{
             /* margin: 4%; */
-            background: url(/index/img/inventorDelCassette.jpg);
+            background: url(zinventorDelCassette.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -150,12 +149,6 @@ h2{
             background-color: rgb(235, 235, 235);
         }
         
-        .productos__celularTableb{
-            width: 100%;
-            height: 20vh;
-            margin-top: 2vh;
-            background-color: rgb(240, 240, 240);
-        }
         .contenido{
             width:90%;
             height: 40vh;
@@ -169,7 +162,6 @@ h2{
             font-style: italic;
             font-size: 4.5mm;
             line-height: 29px;
-            display: none;
         }
         .contenidoIzquierdo__article--p--decripcionDePagina::before{
             content: '';
@@ -196,7 +188,12 @@ h2{
             background-color: rgb(226, 226, 226);
         }
 
-
+.espacioAside{
+    width: 1100px;
+    height: 25vh;
+    padding: 1%;
+    background-color: rgb(236, 236, 236);
+}
 .footer{
     width: 1100px;
 }
@@ -307,6 +304,11 @@ body{
         display: none;
 
     }   
+    .espacioAside{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 11vh;
+    }
     .footer{
         width: 90%;
         margin-left: 5%;
@@ -348,7 +350,6 @@ body{
 .section{
     width: 96%;
     margin-left: 2%;
-    height: 150vh;
 } 
 
     .section__contenidoIzquierdo{
@@ -378,14 +379,6 @@ body{
         }
 
 
-
-
-    .productos__celularTableb{
-        width: 100%;
-        height: 15vh;
-        margin-top: 2vh;
-        background-color: rgb(240, 240, 240);
-    }
     .contenido{
         width:90%;
         height: 30vh;
@@ -397,7 +390,11 @@ body{
         display: none;
     }   
 
-
+    .espacioAside{
+        width: 98%;
+        margin-left: 1%;
+        margin-top: 12vh;
+    }
     .headerFooter{
         width: 90%;
         width: 100%;

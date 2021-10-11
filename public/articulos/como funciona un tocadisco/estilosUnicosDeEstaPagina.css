@@ -1,0 +1,12 @@
+@font-face {font-family:cooperLightBT ;src: url(/fonts/CooperLightBT.ttf);}
+@font-face {font-family:send;src: url(/fonts/send.ttf);}
+
+.ul{
+    margin: 20px 0 20px 20px;
+}
+.li{
+    list-style:disc;
+    font-size: 5.5mm;
+    font-family:cooperLightBT;
+    margin-bottom: 10px;
+}
