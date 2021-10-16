@@ -43,6 +43,8 @@ figcaption{
     .header__logo{
         font-size: 7mm;
         font-family:Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color: black;
     }
 .nav{
     height:3.5vh;
@@ -140,6 +142,9 @@ figcaption{
         width: 70%;
         padding: 3% 5% 0 0;
     }
+    .producto__publicidadAmazonMusic{
+        display: none;
+    }
         .imagenPrincipal{
             width: 100%;
         }
@@ -152,7 +157,10 @@ figcaption{
                 font-size: 4.3mm;
                 font-family:Georgia, 'Times New Roman', Times, serif;
                 line-height: 30px;
-            }               
+            }          
+            .contenidoIzquierdo__article--a{
+                color: rgb(0, 0, 0);
+            }     
                 
         .contenidoIzquierdo__article--p--decripcionDePagina{
             font-family:cooperLightBT ;
@@ -180,8 +188,18 @@ figcaption{
         float: left;
         padding: 1.5% 0% 0% 3.5%;
     }  
+    /* .contenidoDerecho__stiky1{
+        height: 1000px;
+    
+    } */
+        /* .contenidoDerecho__stiky1--contenedor{
+            position: sticky;
+            top: 30px;
+            z-index: -1;
+        } */
         .contenidoDerecho__producto{
             width: 100%;
+            
             padding: 15px 0 0 0 ;
             display: flex;
             background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
@@ -193,6 +211,7 @@ figcaption{
                 width: 50%;
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 40px;
 
             }
                 .producto__producto a{
@@ -202,7 +221,7 @@ figcaption{
                     align-items: center;
                 }
                 .producto__producto a div{
-                    width: 90px;
+                    width: 75px;
                     height: 20px;
                     margin-bottom: 5px;
                     font-family:cooperLightBT ;
@@ -271,7 +290,6 @@ figcaption{
     .pieDePagina__historiasRelacionadas--div{
         width: 96%;
         height: 25%;
-        margin: 0px 2% 0px 2%;
         border-bottom: .1px solid rgb(177, 177, 177);
         display: flex;
         padding-left: 1%;
@@ -302,6 +320,7 @@ figcaption{
         align-items: center;
         justify-content: center;
     }
+
         .historiasRelacionadas__divImg--img{
             width: 80%;
         }
@@ -343,74 +362,14 @@ body{
     height: 60px;
     /* transition: .1s; */
 }
-/* .headerAnimacion{
-    height: 60px;
-} */
-/* .header__logo{
-    transition: .1s;
-} */
-/* .headerAnimacion div{
-    font-size: 7mm;
-} */
-
-.productos__celularTableb{
-    width: 100%;
-    height: 220px;
-    margin-top: 40px;
-    display: flex;
-    background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
-    background-position: bottom;
-    background-size: 4px 1px;
-    background-repeat: repeat-x;
+figcaption{
+    font-size: 4mm;
 }
-    .producto__producto{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        margin-right: 15px;
-    }
-        .producto__producto a{
-            text-decoration:underline coral 2px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-            .producto__producto img{
-                width: 80%;
-                margin-left: 8%;
-            }
-            .producto__producto p{
-                text-align: center;
-                font-size: 3.7mm;
-                margin-bottom:7% ;
-                color: rgb(0, 0, 0);
-                font-family:cooperLightBT ;
-            }
-            .producto__producto div{
-                width: 70px;
-                height: 20px;
-                font-family:cooperLightBT ;
-                font-size: 3.5mm;
-                text-align: center;
-                color: rgb(0, 0, 0);
-                border: 1px solid rgb(0, 0, 0);
-                box-shadow: 2px 2px rgb(0, 0, 0);
-            }
-    .producto__verTodosLosProductosSimilares{
-        width: 70%;
-        height: 65px;
-        font-family:cooperLightBT ;
-        font-size: 4mm;
-        margin-top: 40px;
-        text-align: center;
-        color: rgb(0, 0, 0);
-        text-decoration: underline coral;
-        border: 1px solid rgb(0, 0, 0);
-        box-shadow: 3px 3px rgb(0, 0, 0);
-    }
+
 .nav{
     width: 100%;
-    height: 30px;
+    height: 45px;
+    padding-top: .9%;
     position: sticky;
     top: 0px;
     transition: .1s;
@@ -419,16 +378,12 @@ body{
     background-position: bottom;
 }
     .nav__li--a{
-        font-size: 4.1mm;
+        font-size: 4.9mm;
     }
 .cabeceraPublicidad{
     padding: 0px 20pxpx 20px 0px;
-    display: flex;
-    Align-content: center;
-    text-align: center;
-}
-iframe{
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .section{
     width: 86%;
@@ -447,14 +402,85 @@ iframe{
         width: 600px;
         padding: 3% 0% 0 0%;
     }
-        .contenidoIzquierdo__img{
-            width: 110%;
+
+    .producto__publicidadAmazonMusic{
+        display:unset;
+        display: flex;
+        margin: 50px 0 50px 0;
+    }
+        .publicidadAmazonMusic__iframe{
+            width: 40%;
         }
+        .publicidadAmazonMusic__texto{
+            width: 60%;
+            display: flex;
+            align-items: center;
+        }
+        .publicidadAmazonMusic__texto p{
+            font-size:5.5mm ;
+            text-align: center;
+            height:100%;
+            font-family:cooperLightBT ;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 3px 3px rgb(0, 0, 0);
+        }
+
+        .productos__celularTableb{
+            width: 100%;
+            height: 260px;
+            margin-top: 40px;
+            display: flex;
+            background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 4px 1px;
+            background-repeat: repeat-x;
+        }
+        .producto__producto{
+            width: 26%;
+            display: flex;
+            flex-direction: column;
+            margin-right: 30px;
+        }
+            .producto__producto a ,.producto__publicidadAmazonMusic a{
+                text-decoration:underline coral 2px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+                .producto__producto img{
+                    width: 90%;
+                }
+                .producto__producto p{
+                    font-size: 4.3mm;
+                }
+                .producto__producto a div {
+                    font-size: 5mm;
+                    width: 90px;
+                    height: 29px;
+                }
+        .producto__verTodosLosProductosSimilares{
+            width: 70%;
+            height: 65px;
+            font-family:cooperLightBT ;
+            font-size: 4mm;
+            margin-top: 40px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-decoration: underline coral;
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 3px 3px rgb(0, 0, 0);
+        }
+
         .contenidoIzquierdo__article{
             margin: 5% 0 0 15%;
         }
+        .contenidoIzquierdo__article--p{
+            font-size:4.7mm;
+        }
                 .contenidoIzquierdo__article--p--DivImg{
-                    font-size: 3.5mm;
+                    font-size: 4.5mm;
                 } 
     .section__contenidoDerecho{
         display: none;
@@ -483,6 +509,10 @@ iframe{
     .figure{
         width: 70%;
     }
+    figcaption{
+        font-size: 3.4mm;
+        font-family: send;
+    }
 .header{
     width: 100%;
     height: 7vh;
@@ -502,7 +532,7 @@ iframe{
         margin: 0 20px 0 20px ;
     }
         .nav__li--a{
-            font-size: 4.5mm;
+            font-size: 5mm;
         }
 
 .cabeceraPublicidad{
@@ -511,6 +541,8 @@ iframe{
 .cabeceraPublicidad__celular{
     display: unset;
     margin: 10px 0 10px 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section{
@@ -531,22 +563,30 @@ iframe{
         width: 100%;
     }
         .productoEliminadoEnMovil{
-            display: none;
+            /* display: none; */
         }
-        .producto__verTodosLosProductosSimilares{
+        /* .producto__verTodosLosProductosSimilares{
             width: 70%;
             height: 78px;
+        } */
+        .publicidadAmazonMusic__texto p{
+            font-size:5mm ;
         }
         .contenidoIzquierdo__article{
             width: 100%;
             margin: 5% 0 0 0%;
         }
             .contenidoIzquierdo__article--p{
-                font-size: 4mm;
+                font-size: 4.5mm;
             }
                 .contenidoIzquierdo__article--p--DivImg{
                     width: 60%;
+                    font-size: 3.7;
                 } 
+                
+                .contenidoIzquierdo__article--p--decripcionDePagina{
+                    font-size: 4.5mm;
+                }
     .section__contenidoDerecho{
         display: none;
     }   
@@ -570,11 +610,10 @@ iframe{
                 text-decoration:underline coral;
             }
             .historiasRelacionadas__divImg{
-                width: 60%;
+                width: 50%;
             }
 
-
-    .headerFooter{
+    .headerFooter{  
         height: 8vh;
         width: 90%;
         display: flex;
