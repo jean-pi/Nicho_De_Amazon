@@ -1,0 +1,188 @@
+*{margin: 0;padding: 0;list-style: none;border: none;outline: none;box-sizing: border-box;}
+@font-face {font-family:cooperLightBT ;src: url(/fonts/CooperLightBT.ttf);}
+@font-face {font-family:timeless;src: url(/fonts/Timeless.ttf);}
+@font-face {font-family:send;src: url(/fonts/send.ttf);}
+
+
+
+
+.contenidoIzquierdo__article--productoArticle{
+    margin-top: 40px ;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 4px 1px;
+    background-repeat: repeat-x;
+}
+
+    .contenidoIzquierdo__article--productoArticle h4{
+        font-size: 7.5mm;
+        font-family: cooperLightBT;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+
+    /* producto imagen de un lado--- */
+    .descripcionYimg{
+    }
+        .descripcionYimg figure{
+            width: 50%;
+            float: left;
+        }
+        .descripcionYimg figure a{
+            display: flex;
+            justify-content: center;
+        }
+            .descripcionYimg figure img{
+                width: 50%;
+                margin:25px 0;
+
+            }
+    /* producto imagen completa---- */
+    .descripcionYimg--imgCompleta{
+    }
+        .descripcionYimg--imgCompleta figure{
+            width: 100%;
+        }
+        .descripcionYimg--imgCompleta a{
+            display: flex;
+            justify-content: center;
+        }
+            .descripcionYimg--imgCompleta figure img{
+                width: 70%;
+                margin: 20px 0;
+            }
+    /* productos juntos ----*/
+            .productoAdicional{
+            }
+                .productoAdicional__div1{
+                    text-align: center;
+                    margin: 40px 0 40px 0;
+                }
+                .productoAdicional__div1 img{
+                    width: 6%;
+                }
+                .productoAdicional__div2{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px;
+                    border: solid rgb(0, 0, 0) 1px;
+                }
+                    .productoAdicional__div2 figure{
+                        width: 25%;
+                        margin-right: 50px;
+                    }
+                        .productoAdicional__div2 figure img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    .productoAdicional__div2--a{
+                        width: 25%;
+                        font-family: send;
+                        font-size: 4.4mm;
+                        text-decoration: none;
+                        text-align: center;
+                        color: rgb(0, 0, 0);
+                        border: 1px solid rgb(0, 0, 0);
+                        box-shadow: 3px 3px rgb(0, 0, 0);
+                    }
+                    .productoAdicional__div2--a:hover{
+                        box-shadow: 4px 4px rgb(0, 0, 0);
+                        text-decoration:  underline coral 2px ;
+                    }
+
+    /* -------------------------------------- */
+            .descripcionYimg figure img:hover,.descripcionYimg--imgCompleta figure img:hover{
+                opacity: .8;
+            }
+        .descripcionYimg div,.descripcionYimg--imgCompleta div{
+            margin: 10px 0 10px 0;
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+            .descripcionYimg div a,.descripcionYimg--imgCompleta div a{
+                color: #000;
+                font-size:5.8mm;
+                text-decoration: none;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .descripcionYimg a:hover,.descripcionYimg--imgCompleta a:hover{
+                text-decoration: underline coral 2px;
+            }
+            .descripcionYimg__separadorPuntitos{
+                width: 100%;
+                height: 10px;
+                background-image: linear-gradient(to right, rgb(140, 140, 140) 33%, rgba(255,255,255,0) 0%);
+                background-position: bottom;
+                background-size: 4px 1px;
+                background-repeat: repeat-x;
+            }
+            .descripcionYimg p,.descripcionYimg--imgCompleta p {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 4.5mm;
+                line-height: 1.6;
+            }
+    .caracteristicas{
+    }
+        .caracteristicas h5{
+            font-size: 4.5mm;
+            margin: 20px 0 10px 0;
+            font-family: cooperLightBT;
+            font-weight: 100;
+            text-decoration: underline;
+        }
+            .caracteristicas ul li{
+                list-style:disc;
+                margin-left: 15px;
+                font-family: cooperLightBT;
+            }
+    .buttonDeCompra{
+        width: 250px;
+        margin: 30px auto 10px auto;
+        font-family: send;
+        font-size: 4.5mm;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 3px 3px rgb(0, 0, 0);
+    }
+    .buttonDeCompra:hover{
+        box-shadow: 4px 4px rgb(0, 0, 0);
+        
+    }
+    .buttonDeCompra a{
+        text-decoration: none;
+        color: #000;
+    }
+    .buttonDeCompra a:hover{
+        text-decoration: underline coral 2px;
+    }
+    /* tablet resposive  1200px--------------------------------------------------------------------------*/
+    @media (max-width:1200px){
+        .contenidoIzquierdo__article--productoArticle{
+            background-image: linear-gradient(to right, rgb(255, 255, 255) 33%, rgba(255,255,255,0) 0%);
+        }
+    }
+        /* celular resposive   764px--------------------------------------------------------------------------*/
+        @media(max-width:764px){        
+            .descripcionYimg figure{
+                width: 55%;
+                float: left;
+            }
+                .descripcionYimg figure img{
+                    width: 65%;
+                    margin:12px 0 12px 0;
+                }
+            .productoAdicional__div2--a{
+                width: 60%;
+            }
+            .productoAdicional__div2 figure{
+                width: 35%;
+            }
+            .productoAdicional__div2--a:hover{
+                box-shadow: 4px 4px rgb(0, 0, 0);
+                text-decoration:  underline coral 2px ;
+            }
+        }

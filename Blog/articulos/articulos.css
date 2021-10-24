@@ -13,6 +13,7 @@ h2{
     font-family: cooperLightBT;
     font-weight: 100;
     margin: 35px 0 10px 0;
+
 }
 .figure{
     display: flex;
@@ -69,10 +70,10 @@ span{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px -1px;
 }
     .nav__ul{
-        margin-top: 4px;
+        margin: 3px;
         display: flex;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: center;
     }
             .nav__li--a{
                 color: black;
@@ -83,15 +84,15 @@ span{
                 
             }
             .nav__li--a:hover{
-                color: rgb(255, 166, 0);
+                color: coral    ;
                 text-decoration:underline;
             }
-            .cabeceraPublicidad{
-                padding: 20px 0 20px 0px;
-                margin-left: auto;
-                margin-right: auto;
-        
-        }
+
+.cabeceraPublicidad{
+    padding: 20px 0 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .cabeceraPublicidad__celular{
     display: none;
 }
@@ -219,7 +220,6 @@ span{
             .publicidadAmazonMusicComputadora__texto{
                 width: 60%;
                 text-align: center;
-                height: 96px;
                 font-family:cooperLightBT ;
                 padding: 1.5%;
                 text-align: center;
@@ -228,15 +228,15 @@ span{
                 margin-bottom: 40px;
             }
                 .publicidadAmazonMusicComputadora a p{
-                    font-size: 4.9mm;
+                    font-size: 4mm;
                     color: #000;
                 }
                 .publicidadAmazonMusicComputadora a{
-                    text-decoration:underline coral;
+                    text-decoration:none;
                 }
 
     .contenidoDerecho__stiky1--contenedor{
-        height: 700px;
+        height: 800px;
     }
         .contenidoDerecho__producto{
             /* background-color: aqua; */
@@ -409,8 +409,7 @@ figcaption{
 
 .nav{
     width: 100%;
-    height: 45px;
-    padding-top: .9%;
+    height: 35px;
 }
     .nav__li--a{
         font-size: 4.9mm;
@@ -446,13 +445,12 @@ figcaption{
         }
         .productos__celularTableb{
             width: 100%;
-            height: 260px;
+            height: 240px;
             display: flex;
             background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
             background-position: bottom;
             background-size: 4px 1px;
             background-repeat: repeat-x;
-            margin-bottom: 20px;
         }
         .producto__producto{
             width: 50%;
@@ -496,7 +494,7 @@ figcaption{
         .producto__publicidadAmazonMusic{
             display:unset;
             display: flex;
-            margin: 50px 0 50px 0;
+            margin: 20px 0 20px 0;
         }
             .publicidadAmazonMusic__iframe{
                 width: 40%;
@@ -507,7 +505,7 @@ figcaption{
                 align-items: center;
             }
             .publicidadAmazonMusic__texto p{
-                font-size:5.5mm ;
+                font-size:5mm ;
                 text-align: center;
                 height:100%;
                 font-family:cooperLightBT ;
@@ -515,6 +513,9 @@ figcaption{
                 color: rgb(0, 0, 0);
                 border: 1px solid rgb(0, 0, 0);
                 box-shadow: 3px 3px rgb(0, 0, 0);
+            }
+            .publicidadAmazonMusic__texto a{
+                text-decoration: none;
             }
 
         .contenidoIzquierdo__article{
@@ -571,10 +572,11 @@ figcaption{
     overflow-y:hidden;
     position:sticky;
     display: flex;
-    height: 40px;
+    height: 38px;
 }
 span{
     color: #000;
+    margin-left: 10px;
 }
     .nav__li{
         margin: 0 15px 0 15px ;

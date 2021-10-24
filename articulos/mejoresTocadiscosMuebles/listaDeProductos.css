@@ -1,0 +1,101 @@
+*{margin: 0;padding: 0;list-style: none;border: none;outline: none;box-sizing: border-box;}
+@font-face {font-family:cooperLightBT ;src: url(/fonts/CooperLightBT.ttf);}
+@font-face {font-family:timeless;src: url(/fonts/Timeless.ttf);}
+@font-face {font-family:send;src: url(/fonts/send.ttf);}
+
+.pequeñaSeparacion{
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 4px 1px;
+    background-repeat: repeat-x;
+}
+.contenidoIzquierdo__article--productoArticle{
+    margin-top: 10px ;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 4px 1px;
+    background-repeat: repeat-x;
+}
+    .contenidoIzquierdo__article--productoArticle h4{
+        font-size: 8mm;
+        font-family: cooperLightBT;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+    .descripcionYimg{
+    }
+        .descripcionYimg figure{
+            width: 50%;
+            float: left;
+        }
+            .descripcionYimg figure img{
+                width: 50%;
+                margin: 30px 40px 10px 70px;
+            }
+            .descripcionYimg figure img:hover{
+                opacity: .8;
+            }
+        .descripcionYimg div{
+            margin: 10px 0 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+            .descripcionYimg div a{
+                color: #000;
+                font-size:5.8mm;
+                text-decoration: none;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            .descripcionYimg a:hover{
+                text-decoration: underline coral 2px;
+            }
+            .separadorPuntitos{
+                width: 50%;
+                height: 10px;
+                background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+                background-position: bottom;
+                background-size: 4px 1px;
+                background-repeat: repeat-x;
+            }
+            .descripcionYimg p {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 4.5mm;
+                line-height: 1.4;
+            }
+    .caracteristicas{
+    }
+        .caracteristicas h5{
+            font-size: 4.5mm;
+            margin: 20px 0 10px 0;
+            font-family: cooperLightBT;
+            font-weight: 100;
+            text-decoration: underline;
+        }
+            .caracteristicas ul li{
+                list-style:disc;
+                margin-left: 15px;
+                font-family: cooperLightBT;
+            }
+    .buttonDeCompra{
+        width: 250px;
+        height: 50px;
+        margin: 30px auto 10px auto;
+        border: solid rgb(0, 0, 0) 1px;
+        font-family: send;
+        font-size: 4.5mm;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 3px 3px rgb(0, 0, 0);
+        transition: .3s;
+    }
+    .buttonDeCompra:hover{
+        box-shadow: 5px 5px rgb(0, 0, 0);
+    }
+    .buttonDeCompra a{
+        text-decoration: none;
+        color: #000;
+    }

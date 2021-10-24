@@ -1,6 +1,8 @@
 *{margin: 0;padding: 0;list-style: none;border: none;outline: none;box-sizing: border-box;}
-@font-face {font-family:cooperLightBT ;src: url(fonts/CooperLightBT.ttf);}
-@font-face {font-family:send;src: url(fonts/send.ttf);}
+@font-face {font-family:cooperLightBT ;src: url(/fonts/CooperLightBT.ttf);}
+@font-face {font-family:newsCycle;src: url(/fonts/Timeless.ttf);}
+@font-face {font-family:send;src: url(/fonts/send.ttf);}
+/* euro = alt 0128 */
 /* -------------------------------------------------------HEADER ASIDE------------------------------------------------------  */
 body{
     display: flex;
@@ -8,21 +10,31 @@ body{
     align-items: center;
 }
 h2{
+    font-size: 7.5mm;
     font-family: cooperLightBT;
     font-weight: 100;
-    margin: 35px 0 10px 0;
+    margin: 50px 0 10px 10px;
 }
-.cabeceraPublicidad{
-    margin: 40px 0 10px 0;
-    margin-left: auto;
-    margin-right: auto;
+.figure{
+    display: flex;
+    align-items: flex-start;
+    flex-direction:column ;
+    margin: 5% 0 2% 0;
+    font-size: 3mm;
+    width: 50%;
 }
-.cabeceraPublicidad__celular{
-    display: none;
+figcaption{
+    font-size: 3mm;
+    font-family: send;
+    color: rgb(135, 135, 135);
+}
+.figure img{
+    width: 80%;
 }
 .productos__celularTableb{
     display: none;
 }
+
 .header{
     height: 8vh;
     display: flex;
@@ -43,17 +55,22 @@ h2{
     position: sticky;
     background-color: rgb(255, 255, 255);
     top: 0px;
+    z-index: 1;
     background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
     background-position: top;
     background-size: 4px 1px;
     background-repeat: repeat-x;
     transition: .1s;
 }
+span{
+    color: rgb(255, 255, 255);
+}
 .navAnimacion{
     background-position: bottom;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px -1px;
 }
     .nav__ul{
-        margin-top: 2px;
+        margin: 3px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -67,166 +84,339 @@ h2{
                 
             }
             .nav__li--a:hover{
-                color: rgb(255, 166, 0);
+                color: coral    ;
                 text-decoration:underline;
             }
+
+.cabeceraPublicidad{
+    padding: 20px 0 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cabeceraPublicidad__celular{
+    display: none;
+}
+
+
 .section{
     width: 1100px;
 }
+    .section__header{
+        display: flex;
+        border-top: 3px solid rgb(0, 0, 0) ;
+        border-bottom: 1px solid rgb(146, 146, 146);
+    }
+        .header--div1{
+            width: 70%;
+            padding-right: 30px;
+        }
+            .header__div1--fecha{
+                margin:10px 0px 10px ;
+            }   
+                .header__div1--fecha time{
+                    font-size: 3.2mm;
+                    font-family: send;
+                }
+            .header__div1--h1{
+                font-size: 10mm;
+                font-family: cooperLightBT ;
+                font-weight:100;
+                margin-bottom: 10px;
+            }   
+            .header__div1--p, .header__div1--p a ,.header__div1--p strong{
+                font-family: send ;
+                font-weight: normal;
+                line-height: 1.3 ;
+                font-style: italic;
+                color: rgb(0, 0, 0);
+                margin-bottom: 20px;
+            }
+            .header__div1--p a{
+                text-decoration: underline rgb(0, 0, 0) 1px;
+            }
+            .header__div1--p a:hover{
+            color: coral;
+            }
+        .header--div2{
+            width: 30%;
+            padding: 0 0 0 40px;
+            margin: 25px 0 25px 0px;
+            border-left: 1px solid rgb(146, 146, 146);
+        }
+            .header__div2--titulo{
+                font-family: cooperLightBT ;
+                font-size: 22px;
+            }
+            .header__div2--titulo::after{
+                    content: '';
+                    background-color: lightsalmon;
+                    display: block;
+                    margin-top: 7px;
+                    width: 100px;
+                    height: 2px;
+            }
+            .header__div2--p{
+                font-family: send;
+                font-size:3.3mm;
+                font-style:italic;
+                margin-top: 10px;
+            }
+                .header__div2--p--a{
+                    color: rgb(0, 0, 0);
+                    
+                }
+                .header__div2--p--a:hover{
+                    color: rgb(255, 166, 0);
+                }
+
+
     .section__contenidoIzquierdo{
         float: left;
         width: 70%;
-        padding: 3% 0% 0 0;
+        padding: 3% 0 0 0;
     }
-        .contenidoIzquierdo__articulosPopulares{
-            height: 65vh;
-            width: 100%;
+    .producto__publicidadAmazonMusic{
+        display: none;
+    }
+
+
+
+    .section__contenidoIzquierdo{
+        
+    }
+        .mejoresTocadiscosContenedor{
+            height: 700px;
             display: grid;
-            grid-template-columns: 30% 30% 39%;
-            grid-template-rows: 50% 50%;
+            margin: 30px 0 50px 0;
+            grid-template-rows:50% 50% ;
+            grid-template-columns:33.3% 33.3% 33.3%;
         }
-        .contenidoIzquierdo__articulosPopulares div{
-            margin:5px ;
-        }
-        .articulosPopulares__articulo1{
-            grid-row: 1/3;
-            grid-column: 1/3;
-            background: url(zhistoriaDelTocadisco.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content:space-between;
-            background-position: center center;
-        }
-            .articulo1__titulo1{
-                color: rgb(255, 255, 255);
-                font-family: cooperLightBT;
-                font-size: 7.5mm;
-                margin: 0 0 6% 3%;
-                background-color: rgba(0, 0, 0, 0.381);
+            .mejoresTocadiscosContenedor div{
+                margin: 2px;
             }
-            .articulo1__BLOG1{
+            .producto__a{
+                display: block;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-decoration: none;
+                transition: .5s;
+                background-color: rgba(0, 0, 0, 0.04);
+                padding: 5px;
+            }
+            .producto__a:hover{
+                padding-bottom: 8%;
+            }
+
+            .titulo{
+                color: rgb(255, 255, 255);
+                font-family: cooperLightBT ;
+                font-size: 5.5mm;
+                background-color: rgba(0, 0, 0, 0.258);
+            }
+
+            .tipo{
                 padding: 0 5px 0 5px;
-                width: 58px;
+                width: 80px;
                 color: rgb(255, 255, 255);
                 font-family: cooperLightBT;
                 font-size: 4.5mm;
-                margin: 3% 0 0 3%;
                 background-color: rgb(255, 166, 50);
             }
 
-
-        .articulosPopulares__articulo2{
-            /* margin: 4%; */
-            background: url(zinventorDelCasete.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            
-        }
-
-                .articulo2__titulo2{
-                    color: rgb(255, 255, 255);
-                    font-family: cooperLightBT;
-                    font-size: 6.5mm;
-                    margin: 0 0 6% 3%;
-                    background-color: rgba(0, 0, 0, 0.381);
-                }
-                .articulo2__BLOG2{
-                    padding: 0 5px 0 5px;
-                    width: 53px;
-                    color: rgb(255, 255, 255);
-                    font-family: cooperLightBT;
-                    font-size: 4mm;
-                    margin: 3% 0 0 3%;
-                    background-color: rgb(255, 166, 50);
+                .producto1 {
+                    background: url(https://m.media-amazon.com/images/I/71OGfsUlnKL._AC_SL1500_.jpg);
+                    background-repeat: no-repeat;
+                    background-size:contain;
+                    background-position: center center;
                 }
 
-        .articulosPopulares__articulo3 {
-            background: url(zcomoFuncionaUnTocadisco.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-        }
-                .articulo3__titulo3{
-                    color: rgb(255, 255, 255);
-                    font-family: cooperLightBT;
-                    font-size: 6.5mm;
-                    margin: 0 0 6% 3%;
-                    background-color: rgba(0, 0, 0, 0.381);
+                .producto2{
+                    background: url(https://m.media-amazon.com/images/I/71MnEMhnvbL._AC_SL1500_.jpg);
+                    background-repeat: no-repeat;
+                    background-size:contain;
+                    background-position: center center;
                 }
-                .articulo3__BLOG3{
-                    padding: 0 5px 0 5px;
-                    width: 53px;
-                    color: rgb(255, 255, 255);
-                    font-family: cooperLightBT;
-                    font-size: 4mm;
-                    margin: 3% 0 0 3%;
-                    background-color: rgb(255, 166, 50);
+                .producto3{
+                    background: url(https://m.media-amazon.com/images/I/51X9cNLn+nL._AC_SL1200_.jpg);
+                    background-repeat: no-repeat;
+                    background-size:contain;
+                    background-position: center center;
                 }
-        
-        .articulo__a{
-            display: block;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-decoration: none;
-            transition: .5s;
-        }
-        .articulo__a:hover{
-            padding-bottom: 8%;
-            background-color: rgba(0, 0, 0, 0.197);
-        }
+                .producto4{
+                    background: url(https://m.media-amazon.com/images/I/71+C1yDrFpL._AC_SL1500_.jpg);
+                    background-repeat: no-repeat;
+                    background-size:contain;
+                    background-position: center center;
+                }
+                .producto5{
+                    background: url(https://m.media-amazon.com/images/I/81kecbZEfML._AC_SL1500_.jpg);
+                    background-repeat: no-repeat;
+                    background-size:contain;
+                    background-position: center center;
+                }
+                .producto6{
+                    background: url(https://m.media-amazon.com/images/I/81NIocjuwPL._AC_SL1500_.jpg);
+                    background-repeat: no-repeat;
+                    background-size:contain;
+                    background-position: center center;
+                }
 
 
-
-        .tocadiscos , .caseteras{
-            width: 100%;
-        }
-            .tocadiscos h2, .caseteras h2{
-                display: flex;
-                justify-content: center;
-                font-size: 9mm;
-                margin-top: 10vh;
-                
+            /* h2 */
+            .gridContainer{
+                display: grid;
+                grid-template-columns: 33.3% 33.3% 33.3%;
+                grid-template-rows: 100%;
+                margin: 10px 0 40px 0;
             }
-        .contenido1{
-            
-            height:700px;
+            .gridContainer2{
+                display: grid;
+                grid-template-columns: 33.3% 33.3% 33.3%;
+                grid-template-rows: 50%;
+                margin: 10px 0 40px 0;
+            }
+
+                    .gridContainer__producto{
+                        margin: 4px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        padding: 15px 30px 15px 30px;
+                    }
+                        .gridContainer__producto img{
+                            width: 100%;
+                        }
+                        .gridContainer__nombreDeProducto{
+                            background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+                            background-position: top;
+                            background-size: 4px 1px;
+                            background-repeat: repeat-x;
+                            transition: .1s;
+                            padding: 15px 0 10px 0;
+                            margin: 20px 0 10px 0;
+                        }
+                            .gridContainer__nombreDeProducto a{
+                                font-size: 4mm;
+                                text-decoration: none;
+                                color: rgb(0, 0, 0);
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            }
+                            .gridContainer__nombreDeProducto a:hover{
+                                text-decoration: underline coral 1px;
+                            }
+                            .gridContainer__nombreDeProducto img{
+                                width: 35%;
+                            }
+
+
+                        .gridContainer__buttonComprar{
+                            width: 100%;
+                            height: 30px;
+                            background-color: rgba(245, 180, 59, 0.904);
+                            border-radius: .7em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        
+
+
+
+
+        .gridContainerTiposDeTocadiscos{
+            height: 500px;
             display: grid;
-            margin-bottom: 0vh;
-            grid-template-columns: 33% 33% 33%;
-            grid-template-rows: 50% 50%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50%;
         }
-                .contenido1 div{
-                    margin: 50px;
+        .gridContainerComplementos{
+            height: 150px;
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: 100%;
+        }
+        .tiposDeTocadicos__div{
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.129);
+            
+        }
+                .tiposDeTocadicos__div a {
+                    width: 100%;
+                    height: 100%;
                     display: flex;
                     flex-direction: column;
+                    text-decoration: none;
                 }
-                .contenido1 div img{
-                    margin-bottom: 30px;
-                    
-                }
-                .contenido1 div a p{
-                    font-size: 4.2mm;
-                }
-                .recortarImagen{
-                    width: 60%;
-                    margin-left: 17%;
-                }
+                    .tiposDeTocadicos__div__img{
+                        width: 100%;
+                        height: 75%;
+                        background-position:center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        margin: 10px;
+                    }
+                    .img1{
+                        background-image: url(https://sc04.alicdn.com/kf/HLB1kLnnSyrpK1RjSZFhq6xSdXXaf.jpg);
+                    }
+                    .img2{
+                        background-image: url(https://www.kartyy.com/642-large_default/toca-discos-victrola-8-x-1-cassette-bluetooth-radio-graba-cd.jpg);
+                    }
+                    .img3{
+                        background-image: url(https://m.media-amazon.com/images/I/51AAvP6w96L._AC_SX355_.jpg);
+                    }
+                    .img4{
+                        background-image: url(https://m.media-amazon.com/images/I/71-qbh0m6tL._AC_SY355_.jpg);
+                    }
+
+                    .img1Complementos{
+                        background-image: url(https://m.media-amazon.com/images/I/91+W4dB6yAL._AC_SL1500_.jpg);
+                    }
+                    .img2Complementos{
+                        background-image: url(https://www.kartyy.com/642-large_default/toca-discos-victrola-8-x-1-cassette-bluetooth-radio-graba-cd.jpg);
+                    }
+                    .img3Complementos{
+                        background-image: url(https://m.media-amazon.com/images/I/51AAvP6w96L._AC_SX355_.jpg);
+                    }
 
 
-        .decripcionDePagina{
+                    .tiposDeTocadicos__div__divH3{
+                        width: 100%;
+                        height: 25%;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 10px;
+                        background-color: rgb(255, 255, 255);
+                        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+                        background-position: top;
+                        background-size: 4px 1px;
+                        background-repeat: repeat-x;
+                    }
+                        .tiposDeTocadicos__div__divH3 h3{
+                            font-size: 7mm;
+                            color: black;
+                            font-family: cooperLightBT ;
+                            font-weight: 100;
+                        }
+                        .gridContainerComplementos__div__divh3 h3{
+                            font-size: 4.6mm;
+                        }
+
+
+
+
+
+        .contenidoIzquierdo__article--p--decripcionDePagina{
             font-family:cooperLightBT ;
             margin: 10% ;
             font-style: italic;
-            font-size: 4.5mm;
+            font-size: 4mm;
             line-height: 29px;
         }
-        .decripcionDePagina::before{
+        .contenidoIzquierdo__article--p--decripcionDePagina::before{
             content: '';
             background-color: lightsalmon;
             display: block;
@@ -234,103 +424,192 @@ h2{
             width: 150px;
             height: 3px;
         }
-        .decripcionDePagina--a{
+        .article__p--decripcionDePagina--a{
             color: rgb(0, 0, 0);
         }
-            .decripcionDePagina--a:hover{
+            .article__p--decripcionDePagina--a:hover{
                 color: lightsalmon;
             }
+
+
     .section__contenidoDerecho{
         width: 30%;
         float: left;
         padding: 1.5% 0% 0% 3.5%;
-    }   
-    .contenidoDerecho__producto{
-        width: 100%;
-        padding: 15px 0 20px 0 ;
-        display: flex;
-        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
-        background-position: bottom;
-        background-size: 4px 1px;
-        background-repeat: repeat-x;
-    }
-        .producto__producto{
-            width: 50%;
+    }  
+        .publicidadAmazonMusicComputadora{
             display: flex;
             flex-direction: column;
+            align-items: center;
+            margin: 60px 0 40px 0;
+            background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 4px 1px;
+            background-repeat: repeat-x;
         }
-            .producto__producto a,.contenido1 div a{
-                text-decoration:underline coral 2px;
+            .publicidadAmazonMusicComputadora__iframe{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            .publicidadAmazonMusicComputadora__texto{
+                width: 60%;
+                text-align: center;
+                font-family:cooperLightBT ;
+                padding: 1.5%;
+                text-align: center;
+                border: 1px solid rgb(0, 0, 0);
+                box-shadow: 4px 4px rgb(0, 0, 0);
+                margin-bottom: 40px;
+            }
+                .publicidadAmazonMusicComputadora a p{
+                    font-size: 4mm;
+                    color: #000;
+                }
+                .publicidadAmazonMusicComputadora a{
+                    text-decoration:none;
+                }
+
+    .contenidoDerecho__stiky1--contenedor{
+        height: 800px;
+    }
+        .contenidoDerecho__producto{
+            /* background-color: aqua; */
+            width: 100%;
+            padding: 15px 0 0 0 ;
+            display: flex;
+            position: sticky;
+            top: 35px;
+            background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 4px 1px;
+            background-repeat: repeat-x;
+        }
+            .producto__producto{
+                /* background-color: rgb(220, 51, 250); */
+                width: 50%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                margin-bottom: 40px;
             }
-            .producto__producto a div ,.contenido1 div a div{
-                width: 90px;
-                height: 20px;
-                margin: 10px 0 5px 0;
+                .producto__producto a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-decoration: none;
+                }
+                .producto__producto a:hover{
+                    text-decoration:underline coral 1.5px;
+                }
+                .producto__producto a div{
+                    width: 75px;
+                    height: 20px;
+                    margin-bottom: 5px;
+                    font-family:cooperLightBT ;
+                    font-size: 3.5mm;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    border: 1px solid rgb(0, 0, 0);
+                    box-shadow: 2px 2px rgb(0, 0, 0);
+                }
+                    .producto__producto img{
+                        width: 84%;
+                        
+                    }
+                    .producto__producto p{
+                        text-align: center;
+                        font-size: 3.5mm;
+                        margin-bottom:7% ;
+                        color: rgb(0, 0, 0);
+                        font-family:cooperLightBT ;
+                    }
+            .producto__verTodosLosProductosSimilares{
+                width: 50%;
+                height: 37px;
                 font-family:cooperLightBT ;
-                font-size: 3.5mm;
+                font-size: 3.2mm;
+                margin-top: 40px;
                 text-align: center;
                 color: rgb(0, 0, 0);
                 border: 1px solid rgb(0, 0, 0);
-                box-shadow: 2px 2px rgb(0, 0, 0);
+                box-shadow: 3px 3px rgb(0, 0, 0);
+                text-decoration: none;
             }
-                .producto__producto img {
-                    width: 84%;
-                }
-                .producto__producto p,.contenido1 div p{
-                    text-align: center;
-                    font-size: 3.5mm;
-                    /* margin-bottom:7% ; */
-                    color: rgb(0, 0, 0);
-                    font-family:cooperLightBT ;
-                }
-        /* .producto__verTodosLosProductosSimilares{
-            width: 50%;
-            height: 37px;
+        /* .contenidoDerecho__articulosPopulares{
             font-family:cooperLightBT ;
-            font-size: 3.2mm;
-            margin-top: 40px;
-            text-align: center;
-            color: rgb(0, 0, 0);
-            border: 1px solid rgb(0, 0, 0);
-            box-shadow: 3px 3px rgb(0, 0, 0);
+            margin-bottom: 20px;
+            font-size: 6.5mm;
+            font-weight: 500;
+            margin: 40px 0 40px 0;
+        }
+        .articulosPopulares__li--a{
             text-decoration: none;
+            font-family: cooperLightBT;
+            display: block;
+            font-size: 4.5mm;
+            margin: 10px 0 10px 0;
+            color: rgb(0, 0, 0);
+        }
+        .articulosPopulares__li--a:hover{
+            text-decoration: underline;
         } */
-
-
-        
-    .contenidoDerecho__articulosPopulares{
-        font-family:cooperLightBT ;
-        margin-bottom: 20px;
-        font-size: 6.5mm;
-        font-weight: 500;
-        margin: 40px 0 40px 0;
-    }
-    .articulosPopulares__li--a{
-        text-decoration: none;
-        font-family: cooperLightBT;
-        display: block;
-        font-size: 4.5mm;
-        margin: 10px 0 10px 0;
-        color: rgb(0, 0, 0);
-    }
-    .articulosPopulares__li--a:hover{
-        text-decoration: underline;
-    }
-
-
-.footer{
+.pieDePagina__historiasRelacionadas{
+    border-top: 1px solid rgb(0, 0, 0);
     width: 1100px;
-}
+    }
+    .pieDePagina__historiasRelacionadas--h3{
+        font-family: cooperLightBT;
+        margin: 20px 0 0 20px ;
+        font-weight:700;
+        font-size: 5.6mm;
+    }
+    .pieDePagina__historiasRelacionadas--div{
+        width: 96%;
+        padding: 50px 0 50px 0;
+        border-bottom: .1px solid rgb(177, 177, 177);
+        display: flex;
+        padding-left: 1%;
+    }
+    .historiasRelacionadas__texto{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+        .historiasRelacionas__texto--textito{
+            font-family: send;
+            font-size: 3.5mm;
+        }
+        .historiasRelacionadas__texto--a{
+            text-decoration:none;
+            font-family: cooperLightBT;
+            font-size: 9mm;
+            color: rgb(0, 0, 0);
+        }
+        .historiasRelacionadas__texto--a:hover{
+            text-decoration:underline coral;
+        }
+    .historiasRelacionadas__divImg{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .historiasRelacionadas__divImg--img{
+            width: 80%;
+        }
+    .footer{
+        width: 1100px;
+    }
     .headerFooter{
         height: 8vh;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgb(255, 255, 255);
-    }
+    } 
     .navFooter{
         height:3.5vh;
         background-color: rgb(255, 255, 255);
@@ -349,7 +628,7 @@ h2{
         text-align: center;
         font-family: send;
         font-size: 3mm;
-    }
+    } 
     /* -------------------------------------------------------RESPONSIVE 1200px ------------------------------------------------------  */
     @media (max-width:1200px) {
 body{
@@ -357,93 +636,112 @@ body{
 }
 .header{
     height: 60px;
+    /* transition: .1s; */
 }
+figcaption{
+    font-size: 4mm;
+}
+
 .nav{
     width: 100%;
-    height: 30px;
-    position: sticky;
-    top: 0px;
-    transition: .1s;
-}
-.navAnimacion{
-    background-position: bottom;
+    height: 35px;
 }
     .nav__li--a{
-        font-size: 4.1mm;
+        font-size: 4.9mm;
     }
-.cabeceraPublicidad{
-    padding: 0px 20px 20px 0px;
-    margin-left: auto;
-    margin-right: auto;
-}
-    
+
 .section{
-    width: 90%;
-    margin:0px 0 0 5%;
-    display: flex;
-    flex-direction: column;
+    width: 86%;
+    margin-left: 7%;
 }
-
-    .section__contenidoIzquierdo{
-        width:100%;
-        padding: 5% 0% 0 0%;
-        float:none;
-    }
-    .tocadiscos, .caseteras{
-        padding-top:5px;
-        /* background-color: antiquewhite; */
-        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
-        background-position: top ;
-        background-size: 4px 1px;
-        background-repeat: repeat-x;
-    }
-
-    .productos__celularTableb{
-        width: 100%;
-        height: 250px;
-        margin-top: 40px;
-        padding-top: 20px;
-        display: flex;
-        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
-        background-position: top ;
-        background-size: 4px 1px;
-        background-repeat: repeat-x;
-    }
-        .producto__producto , .producto__publicidadAmazonMusic{
-            width: 26%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin-right: 30px;
+        .header--div1{
+            width: 100%;
+        } 
+                .header__div1--fecha time{
+                    font-size: 4.5mm;
+                }  
+        .header--div2{
+            display: none;
         }
-            .producto__producto a, .producto__publicidadAmazonMusic a{
-                text-decoration:underline coral 2px;
+    .section__contenidoIzquierdo{
+        width: 600px;
+        padding: 3% 0% 0 0%;
+    }
+
+        .titulo{
+            color: rgb(255, 255, 255);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 5.1mm;
+            background-color: rgba(0, 0, 0, 0.53);
+        }
+
+        .tipo{
+            padding: 0 5px 0 5px;
+            width: 80px;
+            color: rgb(255, 255, 255);
+            font-family: cooperLightBT;
+            font-size: 4.8mm;
+            margin: 3% 0 0 3%;
+            background-color: rgb(255, 166, 50);
+        }
+
+    
+    
+
+
+
+                    
+
+
+
+
+
+
+        .puntosDeSeparacionProductosCelularTableb{
+            width: 100%;
+            height: 30px;
+            background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 4px 1px;
+            background-repeat: repeat-x;
+            margin-bottom: 10px;
+        }
+        .productos__celularTableb{
+            width: 100%;
+            display: flex;
+            background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 4px 1px;
+            background-repeat: repeat-x;
+        }
+        .producto__producto{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            margin: 0;
+        }
+            .producto__producto a ,.producto__publicidadAmazonMusic a{
+                text-decoration: underline coral 1px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+            .producto__producto a:hover{
+                text-decoration: underline coral 3px;
+            }
                 .producto__producto img{
-                    width: 80%;
-                    margin-left: 8%;
+                    width: 60%;
                 }
-                .producto__producto p ,.producto__publicidadAmazonMusic p{
-                    text-align: center;
+                .producto__producto p{
                     font-size: 4.3mm;
-                    margin-bottom:7% ;
-                    color: rgb(0, 0, 0);
-                    font-family:cooperLightBT ;
                 }
-                .producto__producto div , .producto__publicidadAmazonMusic div{
-                    width: 70px;
-                    height: 20px;
-                    font-family:cooperLightBT ;
-                    font-size: 3.5mm;
-                    text-align: center;
-                    color: rgb(0, 0, 0);
-                    border: 1px solid rgb(0, 0, 0);
-                    box-shadow: 2px 2px rgb(0, 0, 0);
+                .producto__producto a div {
+                    font-size: 5mm;
+                    width: 90px;
+                    height: 29px;
                 }
-
         .producto__verTodosLosProductosSimilares{
             width: 70%;
             height: 65px;
@@ -456,36 +754,53 @@ body{
             border: 1px solid rgb(0, 0, 0);
             box-shadow: 3px 3px rgb(0, 0, 0);
         }
-
-            .contenidoIzquierdo__articulosPopulares{
-                height: 500px;
+        .producto__publicidadAmazonMusic{
+            display:unset;
+            display: flex;
+            margin: 20px 0 20px 0;
+        }
+            .publicidadAmazonMusic__iframe{
+                width: 40%;
             }
-            .contenidoIzquierdo__articulosPopulares div{
-                margin:6px ;
-            }
-
-            .contenido1 div{
-                margin: 50px;
+            .publicidadAmazonMusic__texto{
+                width: 60%;
                 display: flex;
-                flex-direction: column;
+                align-items: center;
+            }
+            .publicidadAmazonMusic__texto p{
+                font-size:5mm ;
+                text-align: center;
+                height:100%;
+                font-family:cooperLightBT ;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                border: 1px solid rgb(0, 0, 0);
+                box-shadow: 3px 3px rgb(0, 0, 0);
+            }
+            .publicidadAmazonMusic__texto a{
+                text-decoration: none;
             }
 
-            .contenidoIzquierdo__article--p--decripcionDePagina{
-                font-family:cooperLightBT ;
-                margin: 10% ;
-                font-style: italic;
-                font-size: 4.5mm;
-                line-height: 29px;
-                display: none;
-            }
-            
+
     .section__contenidoDerecho{
         display: none;
     }   
-    .espacioAside{
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 11vh;
+
+
+.pieDePagina__historiasRelacionadas{
+    width: 90%;
+    margin-left: 5%;
+}
+.pieDePagina__historiasRelacionadas--div{
+
+    padding: 60px 0 60px 0;
+}
+    .historiasRelacionadas__texto--a{
+        font-size: 8.5mm;
+    }
+    .historiasRelacionas__texto--textito{
+        font-size: 4.5mm;
+        color: rgb(135, 135, 135);
     }
     .footer{
         width: 90%;
@@ -494,143 +809,262 @@ body{
 }
 /* -------------------------------------------------------RESPONSIVE 764px ------------------------------------------------------  */
 @media(max-width:764px){
-    .header{
-        width: 100%;
-        height: 7vh;
-        top: 0px;
-        transition: .1s;
+    h2{
+        font-size: 7mm;
+        margin-top: 30px;
     }
-    .nav{
-        width: 100%;
-        height: 45px;
-        overflow-x:scroll;
-        overflow-y:hidden;
-        position:sticky;
-        display: flex;
-        transition: .1s;
+    .figure{
+        width: 70%;
     }
-        .nav__li{
-            margin: 0 20px 0 20px ;
+    figcaption{
+        font-size: 3.4mm;
+        font-family: send;
+    }
+.header{
+    width: 100%;
+    height: 7vh;
+}
+.nav{
+    width: 100%;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    position:sticky;
+    display: flex;
+    height: 38px;
+}
+span{
+    color: #000;
+    margin-left: 10px;
+}
+    .nav__li{
+        margin: 0 15px 0 15px ;
+    }
+        .nav__li--a{
+            font-size: 4.3mm;
         }
-            .nav__li--a{
-                font-size: 4.5mm;
-            }
-    .cabeceraPublicidad{
-        display: none;
-    }
-    .cabeceraPublicidad__celular{
-        display: unset;
-        margin: 20px 0 0px 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
+.cabeceraPublicidad{
+    display: none;
+}
+.cabeceraPublicidad__celular{
+    display: unset;
+    margin: 10px 0 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .section{
-    width: 96%;
-    margin-left: 2%;
+    width: 88%;
+    margin-left: 6%;
 } 
 
+                .header__div1--fecha time{
+                    font-size: 3.2mm;
+                }
+            .header__div1--h1{
+                font-size: 7.5mm;
+            }   
+            .header__div1--p, .header__div1--p a ,.header__div1--p strong{
+                font-family: send ;
+                font-weight: normal;
+                line-height: 1.3 ;
+                font-size: 4.7mm;
+                font-style: italic;
+                color: rgb(0, 0, 0);
+                margin-bottom: 20px;
+            }
+        .header--div2{
+            display: none;
+        }
     .section__contenidoIzquierdo{
         width: 100%;
     }
-    .contenidoIzquierdo__articulosPopulares{
-        height: 300px;
-    }
-    .contenidoIzquierdo__articulosPopulares div{
-        margin:6px ;
-    }
-        .articulo1__titulo1{
-            font-size: 5mm;
-        }
-        .articulo1__BLOG1{
-            width: 48px;
-            font-size: 3.5mm;
-            background-color: rgb(255, 166, 50);
-        }
-        .articulo2__titulo2{
-            font-size: 3.5mm;
-        }
-        .articulo2__BLOG2 {
-            width: 43px;
-            font-size: 3mm;
-            background-color: rgb(255, 166, 50);
-        }
-        .articulo3__titulo3{
-            font-size: 3.5mm;
-        }
-        .articulo3__BLOG3{
-            width: 43px;
-            font-size: 3mm;
-            background-color: rgb(255, 166, 50);
-        }
-        .contenido1 div a p{
-            font-size: 3.7mm;
-        }
+    
         .producto__producto{
-            margin-right: 25px;
+            padding: 15px 15px 15px 0;
         }
-        .productoEliminadoEnMovil{
-            display: none;
-            
+        .publicidadAmazonMusic__texto p{
+            font-size:5mm ;
         }
-        .producto__publicidadAmazonMusic{
-            padding: 0 10px 0 0;
-            width: 63%;
+        .contenidoIzquierdo__article{
+            width: 100%;
+            margin: 5% 0 0 0%;
+        }
+            .contenidoIzquierdo__article--p{
+                font-size: 4.5mm;
+            }
+                .contenidoIzquierdo__article--p--decripcionDePagina{
+                    font-size: 4.5mm;
+                } 
+
+    
+    .mejoresTocadiscosContenedor{
+        height: 700px;
+        display: grid;
+        margin: 30px 0 30px 0;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+        grid-template-columns:50% 50%;
+    }
+        .producto__a{
+            padding: 10px;
+        }
+        .titulo{
+            font-size: 4.5mm;
         }
 
-        .tocadiscos , .caseteras{
-            width: 100%;
+        .tipo{
+            font-size: 4mm;
         }
-            .tocadiscos h2, .caseteras h2{
-                display: flex;
-                justify-content: center;
-                font-size: 9mm;
-            }
-        .contenido1{
-            margin-top: 5vh;
-            height:900px;
+
+
+
+
+
+        
+
+        .gridContainer{
             display: grid;
-            grid-template-columns:50% 50% ;
-            grid-template-rows: 33% 33% 33%;
-            /* background-color: antiquewhite; */
+            grid-template-columns: 100%;
+            grid-template-rows: 33.3% 33.3% 33.3%;
+            margin: 10px 0 40px 0;
         }
-                .contenido1 div{
-                    margin: 30px;
+        .gridContainer2{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+            margin: 10px 0 40px 0;
+        }
+
+                .gridContainer__producto{
+                    height: 378px;
+                    margin: 60px 0 0px 0;
                     display: flex;
                     flex-direction: column;
-                    /* background-color: aqua; */
-                    /* margin-top: 100px; */
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px 40px 0px 40px;
                 }
-                .contenido1 div img{
-                    margin-bottom: 30px;
+                    .gridContainer__producto img{
+                        width: 90%;
+                    }
+                    .gridContainer__nombreDeProducto{
+                        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+                        background-position: top;
+                        background-size: 4px 1px;
+                        background-repeat: repeat-x;
+                        transition: .1s;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 20px 0 0 0;
+                    }
+                        .gridContainer__nombreDeProducto a{
+                            font-size: 4mm;
+                            text-decoration: none;
+                            color: rgb(0, 0, 0);
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        }
+                        .gridContainer__nombreDeProducto a:hover{
+                            text-decoration: underline coral 1px;
+                        }
+                        .gridContainer__nombreDeProducto img{
+                            width: 25%;
+                        }
+
+
+                    .gridContainer__buttonComprar{
+                        width: 60%;
+                        height: 30px;
+                        
+                        background-color: rgba(245, 180, 59, 0.904);
+                        border-radius: .9em;
+                    }
+
+
+.gridContainerTiposDeTocadiscos{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+    margin: 30px 0 30px 0;
+}
+.gridContainerComplementos{
+    height: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+            .tiposDeTocadicos__div__img{
+                width: 85%;
+                height: 70%;
+            }
+            .tiposDeTocadicos__div__divH3{
+                width: 100%;
+                height: 40%;
+            } 
+                .tiposDeTocadicos__div__divH3 h3{
+                    font-size: 5mm;
+                }
+                .gridContainerComplementos__div__divh3 h3{
+                    font-size: 4.5mm;
+                }
+                                
+        
+
+                                
+
+
+
+
                     
-                }
-                .recortarImagen{
-                    width: 60%;
-                    margin-left: 17%;
-                }
-
-
-
-    .section__contenidoDerecho{
-        display: none;
-    }   
-
-    .espacioAside{
-        width: 98%;
-        margin-left: 1%;
-        margin-top: 12vh;
+.pieDePagina__historiasRelacionadas{
+    width: 90%;
+    margin-left: 5%;
+}
+    .pieDePagina__historiasRelacionadas--h3{
+        font-size: 4.5mm;
     }
-    .headerFooter{
+    .pieDePagina__historiasRelacionadas--div{
+        padding: 25px 0 25px 0;
+    }
+        .historiasRelacionadas__texto{
+            width: 50%;
+        }
+            .historiasRelacionas__texto--textito{
+                display: none;
+            }
+            .historiasRelacionadas__texto--a{
+                font-size: 4.5mm;
+            }
+            .historiasRelacionadas__divImg{
+                width: 50%;
+            }
+
+    .headerFooter{  
+        height: 8vh;
         width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
     .navFooter{
         height:25vh;
         width: 100%;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+        background-position: top;
+        background-size: 4px 1px;
+        background-repeat: repeat-x;
     }
     .nav__ulFooter{
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    
+    .nav__liFooter{
+        margin-top: 10px;
+    }
 }
