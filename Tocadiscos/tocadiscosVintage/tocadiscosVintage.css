@@ -1,0 +1,375 @@
+*{margin: 0;padding: 0;list-style: none;border: none;outline: none;box-sizing: border-box;}
+@font-face {font-family:cooperLightBT ;src: url(/fonts/CooperLightBT.ttf);}
+@font-face {font-family:newsCycle;src: url(/fonts/Timeless.ttf);}
+@font-face {font-family:send;src: url(/fonts/send.ttf);}
+
+
+h2{
+    margin: 20px 0 0 0;
+}
+h3{
+    font-weight: normal;
+}
+.parrafoSeo{
+    font-family:cooperLightBT;
+    margin: 20px 0 40px 0;
+    line-height: 1.7;
+    font-size: 4.7mm;
+}
+    .parrafoSeo a{
+        color: rgb(0, 0, 0);
+        text-decoration: underline coral 2px;
+    }
+
+
+.menuDeNavegacion{
+    border: solid rgb(233, 232, 232) 1px;
+    width: 60%;
+    padding: 30px;
+    background-color: rgb(248, 248, 248)  ;
+    line-height: 1.7;
+}   
+    .menuDeNavegacion a{
+        text-decoration: none;
+        font-family:cooperLightBT;
+        color: black;
+    }
+    .menuDeNavegacion__a{
+        font-size: 5mm;
+    }
+        .menuDeNavegacion ul li{
+            margin-left: 20px;
+            font-size: 4mm;
+        }
+
+
+
+
+
+
+.gridContainerproductos{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 100%;
+    margin: 30px 0 50px 0;
+}
+    .gridContainerproductos__producto{
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        border: solid rgb(202, 202, 202) 1px;
+        text-decoration: none;
+        color: black;
+        padding-bottom: 20px;
+    }
+        .producto__elmas{
+            height: 22px;
+            text-decoration: none;
+            background-color: rgb(255, 141, 100);
+            padding: 3px;
+            margin: 5px;
+            font-size: 3.5mm;
+            color: cornsilk;
+            font-family:cooperLightBT;
+        }
+        .producto__imgLogo1{
+            height: 8%;
+            padding: 7px 0 7px 0;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+        }
+            .imgLogo__img1{
+                width: 35%;
+                object-fit: contain;
+            }
+
+        .producto__imgLogo2{
+            height: 12%;
+            width: 100%;
+            padding: 7px 0 7px 0;
+            display: flex;
+            justify-content: center;
+        }
+            .imgLogo__img2{
+                width: 35%;
+                object-fit: contain;
+            }
+            
+        .producto__imgLogo3{
+            height: 11%;
+            padding: 7px 0 7px 0;
+            display: flex;
+            justify-content: center;
+        }
+            .imgLogo__img3{
+                width: 60%;
+                object-fit: contain;
+            }
+
+        .producto__imgLogo4{
+            height: 9%;
+            padding: 7px 0 7px 0;
+            display: flex;
+            justify-content: center;
+        }
+            .imgLogo__img4{
+                width: 45%;
+                object-fit: contain;
+            }
+
+            
+        .producto__img{
+            width: 70%;
+            margin: auto;
+            padding: 25px;
+        }
+
+        .producto__nombreDelProducto{
+            margin: 0px 0 10px 0;
+            height: 15%;
+            text-align: center;
+            padding: 10px;
+            font-family:cooperLightBT;
+        }
+        .producto__Button{
+            font-family:cooperLightBT;
+            height: 25px;
+            border: solid black 1px;
+            box-shadow: 3px 3px rgb(0, 0, 0);
+            padding: 3px 8px 3px 8px;
+            margin: 0 0 20px 0;
+            transition: .2s;
+            margin: auto;
+        }
+            .producto__Button:hover{
+                box-shadow: 4px 4px rgb(0, 0, 0);
+            }
+    
+
+
+
+
+
+    
+    .separacionPuntitos{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+    .productoRevisionAFondo{
+        padding: 20px 30px 20px 30px;
+        margin: 20px 0 20px 0;
+    }
+        .productoRevisionAFondo__divNombreDelProducto{
+            text-align: center;
+            margin:10px 0 20px 0 ;
+        }
+            .productoRevisionAFondo__divNombreDelProducto a{
+                font-family:cooperLightBT;
+                color: black;
+                text-decoration: none;
+                font-size: 5.5mm;
+                text-decoration: underline coral 1.8px;
+            }
+            .productoRevisionAFondo__divNombreDelProducto a:hover{
+                text-decoration: underline coral 3px;
+            }
+        
+        .productoRevisionAFondo__img-p{
+            padding: 10px;
+        }
+            .productoRevisionAFondo__img-p img{
+                width: 25%;
+                float: left;
+                margin: 20px 40px 20px 20px;
+                transition: .3s;
+            }
+            .productoRevisionAFondo__img-p img:hover{
+                opacity: .8;
+            }
+            .productoRevisionAFondo__img-p p{
+                font-family:cooperLightBT;
+                font-size: 4.5mm;
+                line-height: 1.5;
+            }
+
+
+        .productoRevisionAFondo__VentajasDesventajas{
+            width: 100%;
+            padding: 3px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .VentajasDesventajas__ventajas, .VentajasDesventajas__desventajas{
+                width: 50%;
+                margin: 6px ;
+            }
+            .VentajasDesventajas__ventajas{
+                border: solid #00b347 1.5px;
+            }
+
+            
+            .VentajasDesventajas__desventajas{
+                border: solid  rgba(255, 38, 0, 0.728) 1.5px;
+            }
+                .VentajasDesventajas__ventajas--div1 , .VentajasDesventajas__desventajas--div1{
+                    height: 30px;
+                    width: 100%;
+                    padding-left: 10px;
+                    font-family:cooperLightBT;
+                    display: flex;
+                    align-items: center;
+                    font-size: 5mm;
+                    color: rgb(255, 255, 255);
+                    
+                }
+                .VentajasDesventajas__ventajas--div1 {
+                    border-bottom: solid #00b347 1.5px;
+                    background-color: #00b822 ;
+                }
+                .VentajasDesventajas__desventajas--div1{
+                    border-bottom: solid rgba(255, 38, 0, 0.728) 1.5px;
+                    background-color: rgba(255, 38, 0, 0.728);
+                }
+
+                .VentajasDesventajas__ventajas--div2, .VentajasDesventajas__desventajas--div2{
+                    padding: 10px;
+                    line-height: 1.4;
+                }
+                .VentajasDesventajas__ventajas--div2 li, .VentajasDesventajas__desventajas--div2 li{
+                    list-style:disc;
+                    margin-left: 15px;
+                    font-family:cooperLightBT;
+                }
+
+
+        .productoRevisionAFondo__buttonComprar{
+            text-align: center;
+            margin: 30px 0 10px 0;
+        }
+            .productoRevisionAFondo__buttonComprar a{
+                text-decoration: none;
+                font-size: 4mm;
+                border-radius: 25px;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                background-color: rgba(255, 198, 9, 0.722);
+                color: black;
+                padding: 7px 20px 7px 20px;
+            }
+            .productoRevisionAFondo__buttonComprar a:hover{
+                background-color: rgb(255, 198, 9);
+            }
+
+
+
+/* -------------------------------------------------------RESPONSIVE 764px ------------------------------------------------------  */
+@media(max-width:764px){
+
+
+
+    .menuDeNavegacion{
+        width: 100%;
+        padding: 30px 20px 40px 20px;
+    }   
+
+
+
+
+
+
+    .gridContainerproductos{
+        display: grid;
+        margin-top: 40px;
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 33.3% 33.3%;
+    }
+        .gridContainerproductos__producto{
+            margin: 5px;
+            padding: 20px 0 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            border: solid rgb(167, 167, 167) 1px;
+            text-decoration: underline coral 1px;
+            color: black;
+        }
+
+                .imgLogo__img1{
+                    height: 200%;
+                    width: 35%;
+                    object-fit: contain;
+                }
+    
+                .imgLogo__img2{
+                    width: 25%;
+                    object-fit: contain;
+                }
+                
+            .producto__imgLogo3{
+                height: 15%;
+                padding: 20px 0 7px 0;
+                display: flex;
+                justify-content: center;
+            }
+                .imgLogo__img3{
+                    width: 65%;
+                    object-fit: contain;
+                }
+
+
+
+
+
+
+                .separacionPuntitos{
+                    display: none   ;
+                }
+                .separacionPuntitos__celulatTabled{
+                    margin: 0px 0 20px 0 ;
+                    height: 40px;
+                    background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+                    background-position: bottom;
+                    background-size: 4px 1px;
+                    background-repeat: repeat-x;
+                }
+                .productoRevisionAFondo{
+                    padding: 0px 0px 0px 0px;
+                    margin: 20px 0 0px 0;
+                }
+                    .productoRevisionAFondo__img-p{
+                        padding: 0px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                        .productoRevisionAFondo__img-p img{
+                            width: 60%;
+                            float:unset;
+                            margin: 20px 0px 30px 0px;
+                        }
+                        .productoRevisionAFondo__img-p p{
+                            line-height: 1.6;
+                        }
+                    .productoRevisionAFondo__VentajasDesventajas{
+                        display: unset;
+                    }
+                        .VentajasDesventajas__ventajas, .VentajasDesventajas__desventajas{
+                            width: 100%;
+                            margin: 20px 0 30px 0 ;
+                        }
+                            .VentajasDesventajas__ventajas--div2, .VentajasDesventajas__desventajas--div2{
+                                font-size: 4.3mm;
+                            }
+    
+    
+}
