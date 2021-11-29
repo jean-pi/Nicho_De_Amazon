@@ -1,10 +1,4 @@
-*{margin: 0;
-padding: 0;
-list-style: none;
-border: none;
-outline: none;
-box-sizing: border-box;
-}
+*{margin: 0;padding: 0;list-style: none;border: none;outline: none;box-sizing: border-box;}
 @font-face {font-family:cooperLightBT ;src: url(/fonts/CooperLightBT.ttf);}
 @font-face {font-family:newsCycle;src: url(/fonts/Timeless.ttf);}
 @font-face {font-family:send;src: url(/fonts/send.ttf);}
@@ -108,7 +102,7 @@ span{
 
 
 .section{
-    width: 65%;
+    width: 1100px;
 }
     .section__header{
         display: flex;
@@ -116,7 +110,7 @@ span{
         border-bottom: 1px solid rgb(146, 146, 146);
     }
         .header--div1{
-            width: 100%;
+            width: 70%;
             padding-right: 30px;
         }
             .header__div1--fecha{
@@ -146,16 +140,47 @@ span{
             .header__div1--p a:hover{
             color: coral;
             }
+        .header--div2{
+            width: 30%;
+            padding: 0 0 0 40px;
+            margin: 25px 0 25px 0px;
+            border-left: 1px solid rgb(146, 146, 146);
+        }
+            .header__div2--titulo{
+                font-family: cooperLightBT ;
+                font-size: 22px;
+            }
+            .header__div2--titulo::after{
+                    content: '';
+                    background-color: lightsalmon;
+                    display: block;
+                    margin-top: 7px;
+                    width: 100px;
+                    height: 2px;
+            }
+            .header__div2--p{
+                font-family: send;
+                font-size:3.3mm;
+                font-style:italic;
+                margin-top: 10px;
+            }
+                .header__div2--p--a{
+                    color: rgb(0, 0, 0);
+                    
+                }
+                .header__div2--p--a:hover{
+                    color: rgb(255, 166, 0);
+                }
+
 
     .section__contenidoIzquierdo{
         float: left;
-        width: 100%;
+        width: 70%;
         padding: 3% 0 0 0;
     }
     .producto__publicidadAmazonMusic{
         display: none;
     }
-
 
 
 
@@ -195,9 +220,8 @@ span{
     /* review mejores tocadiscos ----------------------------------------------------*/
         .mejoresTocadiscosContenedor{
             height: 700px;
-            width: 90%;
             display: grid;
-            margin: 30px auto 50px auto;
+            margin: 30px 0 50px 0;
             grid-template-rows:50% 50% ;
             grid-template-columns:33.3% 33.3% 33.3%;
         }
@@ -277,43 +301,38 @@ span{
 
             /* Catalogo de productos de dos fila y de una fila---------------------------------------- */
             .gridContainer{
-                width: 90%;
                 display: grid;
                 grid-template-columns: 33.3% 33.3% 33.3%;
                 grid-template-rows: 100%;
-                margin: 10px auto 40px auto ;
+                margin: 10px 0 40px 0;
             }
             .gridContainer2{
-                width: 90%;
                 display: grid;
+                height: 1340px;
                 grid-template-columns: 33.3% 33.3% 33.3%;
-                grid-template-rows: 50% 50%;
-                margin: 10px auto 40px auto;
+                grid-template-rows: 33.3% 33.3% 33.3%;
+                margin: 10px 0 40px 0;
             }
 
                     .gridContainer__producto{
-                        margin: 10px;
+                        margin: 4px 5px 10px 5px;
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
                         justify-content: flex-end;
-                        padding: 20px 30px 15px 30px;
+                        padding: 15px 30px 15px 30px;
                         border: solid rgb(226, 226, 226) 1px;
                     }
                     .gridContainer__producto a{
-                        font-size: 3.8mm;
+                        font-size: 4mm;
                         text-decoration: none;
                         color: rgb(0, 0, 0);
                         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                     }
                     .gridContainer__producto a:hover{
-                        text-decoration: underline rgba(255, 166, 0, 0.959) 2px;
-                    }
-                    .gridContainer__producto a:hover{
                         /* text-decoration: underline coral 1px; */
                     }
                         .gridContainer__producto img{
-                            width: 85%;
+                            width: 100%;
                         }
                         .gridContainer__nombreDeProducto{
                             background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
@@ -325,20 +344,21 @@ span{
                             margin: 20px 0 10px 0;
                         }
                             .gridContainer__nombreDeProducto img{
-                                width: 25%;
+                                width: 35%;
                             }
 
 
                         .gridContainer__buttonComprar{
                             width: 70%;
-                            height: 30px;
+                            height: 25px;
                             background-color: rgba(245, 180, 59, 0.904);
-                            border-radius: .2em;
+                            border-radius: .7em;
                             margin: auto;
                             display: flex;
                             align-items: center;
                             font-family: cooperLightBT ;
                             justify-content: center;
+                            transition: .2s;
                         }
                         .gridContainer__buttonComprar:hover{
                             background-color: rgba(255, 166, 0, 0.959);
@@ -349,14 +369,13 @@ span{
                     
         /* tipos de tocadiscos --------------------------------------------------------------*/
         .gridContainerTiposDeTocadiscos{
-            height: 250px;
+            height: 500px;
             display: grid;
-            grid-template-columns: 33.3% 33.3% 33.3%;
-            grid-template-rows: 100%;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50%;
         }
         /* complementos , comparten clases-------*/
         .gridContainerComplementos{
-            width: 70%;
             height: 150px;
             display: grid;
             grid-template-columns: 33.3% 33.3% 33.3%;
@@ -394,7 +413,7 @@ span{
                         background-image: url(https://m.media-amazon.com/images/I/51AAvP6w96L._AC_SX355_.jpg);
                     }
                     .img4{
-                        background-image: url(https://m.media-amazon.com/images/I/611MMlpy3HL._AC_SL1080_.jpg);
+                        background-image: url(https://m.media-amazon.com/images/I/71-qbh0m6tL._AC_SY355_.jpg);
                     }
 
                     .img1Complementos{
@@ -414,7 +433,11 @@ span{
                         display: flex;
                         align-items: center;
                         padding-left: 10px;
-                        border-top: solid rgb(182, 182, 182) 1px;
+                        background-color: rgb(255, 255, 255);
+                        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+                        background-position: top;
+                        background-size: 4px 1px;
+                        background-repeat: repeat-x;
                     }
                         .tiposDeTocadicos__div__divH3 h3{
                             font-size: 7mm;
@@ -451,6 +474,284 @@ span{
             .article__p--decripcionDePagina--a:hover{
                 color: lightsalmon;
             }
+
+
+    .section__contenidoDerecho{
+        width: 30%;
+        float: left;
+        padding: 3% 0% 0% 3.5%;
+    }  
+
+    .contenidoDerecho__stiky1--contenedor{
+        height: 1000px;
+    }
+
+
+
+
+
+
+    
+            .productosSimilares__ButtonCompra{
+                width: 75px;
+                height: 20px;
+                margin-bottom: 5px;
+                font-family:cooperLightBT ;
+                font-size: 3.5mm;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                border: 1px solid rgb(0, 0, 0);
+                box-shadow: 2px 2px rgb(0, 0, 0);
+            }
+        .publicidadAmazonMusicComputadora{
+            display: flex;
+            position: sticky;
+            top: 35px;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0 10px 0;
+            /* background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 4px 1px;
+            background-repeat: repeat-x; */
+        }
+            .publicidadAmazonMusicComputadora__iframe{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            .publicidadAmazonMusicComputadora__texto{
+                width: 60%;
+                text-align: center;
+                font-family:cooperLightBT ;
+                padding: 1.5%;
+                text-align: center;
+                border: 1px solid rgb(0, 0, 0);
+                box-shadow: 4px 4px rgb(0, 0, 0);
+                margin-bottom: 40px;
+            }
+                .publicidadAmazonMusicComputadora a p{
+                    font-size: 4mm;
+                    color: #000;
+                }
+                .publicidadAmazonMusicComputadora a{
+                    text-decoration:none;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+        .contenidoDerecho__producto{
+            /* background-color: aqua; */
+            width: 100%;
+            padding: 15px 0 0 0 ;
+            display: flex;
+            position: sticky;
+            align-items: flex-start;
+            top: 35px;
+            /* background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 4px 1px;
+            background-repeat: repeat-x; */
+        }
+            .producto__producto{
+                /* background-color: rgb(220, 51, 250); */
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 40px;
+            }
+                .producto__producto a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-decoration: none;
+                }
+                .producto__producto a:hover{
+                    text-decoration:underline coral 1.5px;
+                }
+                .producto__producto a div{
+                    width: 75px;
+                    height: 20px;
+                    margin-bottom: 5px;
+                    font-family:cooperLightBT ;
+                    font-size: 3.5mm;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    border: 1px solid rgb(0, 0, 0);
+                    box-shadow: 2px 2px rgb(0, 0, 0);
+                    transition: .2s;
+                }
+                    .producto__producto a div:hover{
+                        box-shadow: 4px 4px rgb(0, 0, 0);
+                    }
+                    .producto__producto img{
+                        width: 84%;
+                        
+                    }
+                    .producto__producto p{
+                        text-align: center;
+                        font-size: 3.5mm;
+                        margin-bottom:7% ;
+                        color: rgb(0, 0, 0);
+                        font-family:cooperLightBT ;
+                    }
+                .producto__verTodosLosProductosSimilares{
+                    width: 35%;
+                    font-family:cooperLightBT ;
+                    font-size: 3.3mm;
+                    margin: 40px 0 0 15px;
+                    text-align: center;
+                    padding: 5px;
+                    color: rgb(0, 0, 0);
+                    border: 1px solid rgb(0, 0, 0);
+                    box-shadow: 3px 3px rgb(0, 0, 0);
+                    text-decoration: none;
+                    transition: .2s;
+                }
+                .producto__verTodosLosProductosSimilares:hover{
+                    box-shadow: 5px 5px rgb(0, 0, 0);
+                }
+                    .producto__verTodosLosProductosSimilares h3{
+                        font-weight:normal;
+                    }
+        /* .contenidoDerecho__articulosPopulares{
+            font-family:cooperLightBT ;
+            margin-bottom: 20px;
+            font-size: 6.5mm;
+            font-weight: 500;
+            margin: 40px 0 40px 0;
+        }
+        .articulosPopulares__li--a{
+            text-decoration: none;
+            font-family: cooperLightBT;
+            display: block;
+            font-size: 4.5mm;
+            margin: 10px 0 10px 0;
+            color: rgb(0, 0, 0);
+        }
+        .articulosPopulares__li--a:hover{
+            text-decoration: underline;
+        } */
+
+
+
+
+
+
+
+
+        .contenidoDerecho__productosSimilares{
+            margin:40px 0 40px 0;
+            padding: 10px 0 30px 0;
+            display: flex;
+            background-image: linear-gradient(to right, rgb(140, 140, 140) 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 4px 1px;
+            background-repeat: repeat-x;
+        }
+        .contenidoDerecho__productosSimilares a{
+            display: block;
+            margin: 0 5px 0 5px;
+            width: 33.3%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none;
+        }
+        .contenidoDerecho__productosSimilares a:hover{
+            text-decoration:underline coral 1.5px;
+        }
+            .contenidoDerecho__productosSimilares a img{
+                width: 56%;
+            }
+            .contenidoDerecho__productosSimilares div{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+                .contenidoDerecho__productosSimilares a p{
+                    text-align: center;
+                    font-size: 3.5mm;
+                    margin-bottom:7% ;
+                    color: rgb(0, 0, 0);
+                    font-family:cooperLightBT ;
+                }
+    
+                .productosSimilares__ButtonCompra{
+                    width: 75px;
+                    height: 20px;
+                    margin-bottom: 5px;
+                    font-family:cooperLightBT ;
+                    font-size: 3.5mm;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    border: 1px solid rgb(0, 0, 0);
+                    box-shadow: 2px 2px rgb(0, 0, 0);
+                }
+        
+                
+
+
+
+
+                .ContenidoDerecho__categoriaRelacionada{
+                    height: 290px;
+                    border: solid rgb(201, 201, 201) 1px;
+                    margin: 10px 0 20px 0;
+                    position: sticky;
+                    top: 35px;
+                }
+            
+                .categoriaRelacionada__tePuedeInteresar{
+                    width: 40%;
+                    padding: 2px 5px 2px 5px;
+                    font-family:cooperLightBT ;
+                    background-color:rgb(255, 146, 107);
+                    margin: 5px 5px 20px 5px;
+                    font-size: 3.2mm;
+                }
+                .ContenidoDerecho__categoriaRelacionada a{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-decoration: none;
+                }
+                .ContenidoDerecho__categoriaRelacionada a:hover {
+                    text-decoration: underline coral 1.5px;
+                }
+        
+                    .categoriaRelacionada__div__img{
+                        height: 170px;
+                        object-fit: contain;
+                        margin-bottom: 20px;
+                    }
+                    .categoriaRelacionada__div__divH3{
+                        height: 20%;
+                        font-family:cooperLightBT ;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-image: linear-gradient(to right, rgb(140, 140, 140) 33%, rgba(255,255,255,0) 0%);
+                        background-position: top;
+                        background-size: 4px 1px;
+                        background-repeat: repeat-x;
+                    }
+                        .categoriaRelacionada__div__divH3 h3{
+                            font-weight:normal;
+                            color: black;
+                            font-size: 6mm;
+                        }
 
 
 
@@ -639,32 +940,25 @@ figcaption{
             .producto__producto a ,.producto__publicidadAmazonMusic a{ 
                 text-decoration: underline coral 2px;
                 display: flex;
-                color: #000;
-                text-align: center;
                 flex-direction: column;
                 align-items: center;
-                            font-family:cooperLightBT ;
             }
             .producto__producto a:hover{
                 text-decoration: underline coral 3px;
             }
                 .producto__producto img{
                     width: 60%;
-                    margin-bottom: 10px;
                 }
                 .producto__producto p{
                     font-size: 4.3mm;
                 }
                 .producto__producto a div {
-                    font-size: 4.5mm;
-                    margin-top: 16px;
-                    padding: 0px 6px 4px 6px;
-                    border: solid rgb(0, 0, 0) 1px;
-                    box-shadow: 3px 3px black;
+                    font-size: 5mm;
+                    width: 90px;
+                    height: 29px;
                 }
         .producto__verTodosLosProductosSimilares{
             width: 40%;
-            height: 80px;
             margin: 0 15px 0 0;
             font-family:cooperLightBT ;
             font-size: 4mm;
@@ -821,13 +1115,11 @@ span{
     
     .mejoresTocadiscosContenedor{
         height: 700px;
-        width: 100%;
         display: grid;
         margin: 30px 0 30px 0;
         grid-template-rows: 33.3% 33.3% 33.3%;
         grid-template-columns:50% 50%;
     }
-    
         .producto__a{
             padding: 10px;
         }
@@ -851,20 +1143,17 @@ span{
 
 
         .gridContainer{
-            width: 100%;
             display: grid;
-            height: 1100px;
             grid-template-columns: 100%;
             grid-template-rows: 33.3% 33.3% 33.3%;
             margin: 10px 0 10px 0;
         }
         
         .gridContainer2{
-            width: 100%;
+            height: 4100px;
             display: grid;
-            height: 2500px;
             grid-template-columns: 100%;
-            grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+            grid-template-rows: 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1%;
             margin: 10px 0 40px 0;
         }
 
@@ -874,15 +1163,42 @@ span{
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    padding: 0px 30px 0px 30px;
+                    padding:40px;
                 }
                     .gridContainer__producto img{
-                        width: 80%;
+                        width: 70%;
                     }
+                    .gridContainer__nombreDeProducto{
+                        background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+                        background-position: top;
+                        background-size: 4px 1px;
+                        background-repeat: repeat-x;
+                        transition: .1s;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 20px 0 0 0;
+                    }
+                        .gridContainer__nombreDeProducto a{
+                            font-size: 4mm;
+                            text-decoration: none;
+                            color: rgb(0, 0, 0);
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        }
+                        .gridContainer__nombreDeProducto a:hover{
+                            text-decoration: underline coral 1px;
+                        }
                         .gridContainer__nombreDeProducto img{
                             width: 25%;
                         }
 
+
+                    .gridContainer__buttonComprar{
+                        width: 60%;
+                        height: 30px;
+                        
+                        background-color: rgba(245, 180, 59, 0.904);
+                        border-radius: .9em;
+                    }
 
 
 .gridContainerTiposDeTocadiscos{
@@ -893,7 +1209,6 @@ span{
     margin: 30px 0 30px 0;
 }
 .gridContainerComplementos{
-    width: 100%;
     height: 200px;
     display: grid;
     grid-template-columns: 50% 50%;

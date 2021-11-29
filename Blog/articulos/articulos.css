@@ -218,7 +218,7 @@ span{
 
     .ContenidoDerecho__categoriaRelacionada{
         height: 270px;
-        border: solid rgb(162, 162, 162) 1px;
+        border: solid rgb(212, 212, 212) 1px;
         margin-top: 18px;
         position: sticky;
         top: 35px;
@@ -249,8 +249,8 @@ span{
                 background-position:center;
                 background-size: contain;
                 background-repeat: no-repeat;
-                margin: 0px;
-                background-image: url(https://m.media-amazon.com/images/I/81c8cM9FZhL._SL1500_.jpg);
+                margin: 30px;
+                background-image: url(https://m.media-amazon.com/images/I/91+W4dB6yAL._AC_SL1500_.jpg);
             }
             .tiposDeTocadicos__div__divH3{
                 height: 20%;
@@ -258,7 +258,7 @@ span{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-image: linear-gradient(to right, rgb(140, 140, 140) 33%, rgba(255,255,255,0) 0%);
+                background-image: linear-gradient(to right, rgb(90, 90, 90) 33%, rgba(255,255,255,0) 0%);
                 background-position: top;
                 background-size: 4px 1px;
                 background-repeat: repeat-x;
@@ -313,6 +313,7 @@ span{
             width: 100%;
             padding: 15px 0 0 0 ;
             display: flex;
+            align-items: flex-start;
             position: sticky;
             top: 35px;
         }
@@ -360,7 +361,6 @@ span{
                     }
             .producto__verTodosLosProductosSimilares{
                 width: 35%;
-                height: 85px;
                 font-family:cooperLightBT ;
                 font-size: 3.9mm;
                 margin: 40px 0 0 15px;
@@ -691,7 +691,7 @@ span{
         margin: 0 15px 0 15px ;
     }
         .nav__li--a{
-            font-size: 4.3mm;
+            font-size: 4.7mm;
         }
 
 .cabeceraPublicidad{
@@ -710,7 +710,7 @@ span{
 } 
 
                 .header__div1--fecha time{
-                    font-size: 3.2mm;
+                    font-size: 4mm;
                 }
             .header__div1--h1{
                 font-size: 7.5mm;
