@@ -1,0 +1,615 @@
+.h2--inicial{
+    margin: 10px 0 30px 0;
+}
+h2{
+    margin: 80px 0 30px 0;
+}
+
+
+.imgPrincipal{
+    width: 100%;
+}
+
+    /* 3 productos mejores Puntuados ----------------------------------------------------------------- */
+.a__produtosMejorPuntuados{
+    text-decoration: none;
+    color: #000;
+}
+.a__produtosMejorPuntuados:hover{
+    text-decoration: underline coral 1px;
+}
+.ProductosMejorPuntuado{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 4px 1px;
+    background-repeat: repeat-x;
+}
+    .ProductosMejorPuntuado__div1{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+        .ProductosMejorPuntuado__div1 h3{
+            width: 100%;
+            font-size: 5.3mm;
+            font-family:cooperLightBT ;
+            font-weight: 300;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .button-Estrellas{
+            display: flex;
+            align-items: center;
+        }
+        .button-Estrellas div{
+            width: 30%;
+            padding: 3px;
+            margin-right: 10px;
+            font-family:cooperLightBT ;
+            font-size: 4mm;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-decoration: underline coral;
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 3px 3px rgb(0, 0, 0);
+        }
+        .img{
+            width: 30%;
+            height: 30%;
+            margin-right: 10px;
+        }
+    .ProductosMejorPuntuado__div2{
+        padding: 20px;
+        width: 50%;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+        .ProductosMejorPuntuado__div2 img{
+            width: 40%;
+            height: 100%;
+        }
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo de textos-----------------------------------------------------------------------------------------------------------------------*/
+
+.parrafoSeo{
+    font-family:cooperLightBT ;
+    margin:0 5% 40px 1.5%;
+    font-size: 4.5mm;
+    line-height: 1.8 ;
+}
+    .parrafoSeo strong{
+        font-weight: normal;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+    }
+.h3{
+    font-family:cooperLightBT ;
+    font-weight: normal;
+    font-size: 6mm;
+    margin: 0 0 20px 10px;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* Listado en 4 columnas completas ------------------------------------------------------------------------------------------------------------*/
+    .Listado1{
+        display: flex;
+    }
+        .listado1__producto{
+            width: 25%;
+            margin: 0 5px 0 5px;
+        }
+            .listado1__producto__a{
+                text-decoration: none;
+                color: #000;
+            }
+            .listado1__producto__a:hover{
+                text-decoration: underline coral 1px;
+                color: #000;
+            }
+                .listado1__producto__a__div1{
+                    height: 60%;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    padding: 20px 0 20px 0;
+                }
+                    .listado1__producto__a__div1__img1{
+                        width: 90%;
+                    }.listado1__producto__a__div1__img2{
+                        width: 61%;
+                    }
+                    .listado1__producto__a__div1__img3{
+                        width: 80%;
+                    }
+                    .listado1__producto__a__div1__img4{
+                        width: 80%;
+                    }
+                .listado1__producto__a__div2{
+                    height: 40%;
+                    /* background-color: rgba(243, 243, 243, 0.421); */
+                    padding: 15px 0px 5px 0px;
+                    border-top: solid coral 3px
+                }
+                    .listado1__producto__a__div2 h3{
+                        font-family:cooperLightBT ;
+                        font-weight: 100;
+                        font-size: 4.8mm;
+                        text-align: center;
+                    }
+                    .listado1__producto__a__div2__caracteristicas{
+                        margin-top: 20px;
+                        width: 100%;
+                        font-family:cooperLightBT ;
+                        text-decoration: underline black 1px;
+                    }
+                    .listado1__producto__a__div2__caracteristicas ul{
+                        margin-top: 5px;
+                    }
+                        .listado1__producto__a__div2__caracteristicas ul li{
+                            list-style:inside ;
+                            text-decoration: underline rgb(255, 255, 255) 1px;
+                        }
+                    .buttonDeCompra{
+                        font-family:cooperLightBT ;
+                        font-size: 4.5mm;
+                        margin: 20px auto 10px auto;
+                        border: 1px solid rgb(0, 0, 0);
+                        box-shadow: 3px 3px rgb(0, 0, 0);
+                        width: 50%;
+                        text-align: center;
+                        transition: .3s;
+                    }
+                    .buttonDeCompra:hover{
+                        border: 1px solid rgb(0, 0, 0);
+                        box-shadow: 5px 5px rgb(0, 0, 0);
+                    }
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Listado 4 productos rectangulares -------------------------------------------------------------------------------------------------------- */
+    .listado2{
+        display: grid;
+        height: 380px;
+        margin-top: 20px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        /* background-color: aqua; */
+    }
+        .listado2__producto{
+            margin: 5px;
+            /* background-color: blueviolet; */
+            border:dotted 1.5px black
+        }
+            .listado2__producto__a{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 100%;
+                text-decoration: none;
+                color: black;
+            }
+            .listado2__producto__a:hover{
+                text-decoration: underline coral 1px;
+            }
+                .listado2__producto__a__div{
+                    margin: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    display: flex;
+                    justify-content: space-around;
+                    
+                }
+                    .listado2__producto__a__div h3{
+                        font-family:cooperLightBT ;
+                        font-weight: 100;
+                        display: block;
+                        width: 60%;
+                        text-align: center;
+                        height: 100%;
+                        padding: 10px;
+                        font-size: 3.8mm;
+                    }
+                    .listado2__div1__img1{
+                        width: 80%;
+                    }
+                    .listado2__div1__img2{
+                        width: 65%;
+                    }
+                    .listado2__div1__img3{
+                        width: 80%;
+                    }
+                    .listado2__div2__img3{
+                        width: 65%;
+                    }
+                    .listado2__div3__img1{
+                        width: 55%;
+                    }
+                    .listado2__div3__img2{
+                        width: 80%;
+                    }
+                    
+                    .listado2__div3__img3{
+                        width: 90%;
+                    }
+                    .listado2__buttonDeCompra{
+                        font-family:cooperLightBT ;
+                        font-size: 4.5mm;
+                        margin: 10px auto 15px auto;
+                        border: 1px solid rgb(0, 0, 0);
+                        box-shadow: 3px 3px rgb(0, 0, 0);
+                        width: 50%;
+                        text-align: center;
+                        transition: .3s;
+                    }
+                    .listado2__buttonDeCompra:hover{
+                        border: 1px solid rgb(0, 0, 0);
+                        box-shadow: 5px 5px rgb(0, 0, 0);
+                    }
+/* -----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* listado en cuadricula cuadrados ---------------------------------------------------------------------------------------------------------------*/
+
+    .listado3{
+        display: grid;
+        height: 600px;
+        margin-top: 20px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        /* background-color: aqua; */
+    }
+        .listado3__producto__a__div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .listado3__producto__a__div h3{
+            font-family:cooperLightBT ;
+            font-weight: 100;
+            display: block;
+            width: 60%;
+            text-align: center;
+            padding: 10px;
+            font-size: 4mm;
+        }
+        .listado2__producto__a__div{
+            display: flex;
+            justify-content: space-around;
+        }
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+/* listado 3 productos una fila ---------------------------------------------------------------------------------------------------------------*/
+
+.listado4{
+    display: grid;
+    height: 340px;
+    margin: 20px 0 30px 0;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 100%;
+}
+.listado4__producto__a{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50%;
+    text-decoration: none;
+    color: black;
+}
+.listado4__producto__a:hover{
+    text-decoration: underline coral 1px;
+}
+    .listado4__producto__a__div1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .listado4__div__img1, .listado4__div__img2, .listado4__div__img3{
+            width: 50%;
+        }
+    .listado4__producto__a__div2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .listado4__producto__a__div1 h3{
+        font-family:cooperLightBT ;
+        font-weight: 100;
+        display: block;
+        width: 60%;
+        text-align: center;
+        padding: 10px;
+        font-size: 4mm;
+    }
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+    /* -------------------------------------------------------RESPONSIVE 1200px ------------------------------------------------------  */
+    @media (max-width:1200px) {
+
+        .ProductosMejorPuntuado{
+            background-position: top;
+        }
+
+
+
+
+    .listado1__producto__a__div1{
+        height: 45%;
+    }
+    .listado1__producto__a__div2{
+        height: 55%;
+    }
+        .listado1__producto__a__div2 h4{
+            font-size: 4.2mm;
+        }
+        .listado1__producto__a__div2__caracteristicas{
+            text-decoration: underline rgb(255, 255, 255) 0px;
+        }
+            .listado1__producto__a__div2__caracteristicas ul li{
+                font-size: 3.5mm;
+            }
+        .buttonDeCompra{
+            width: 60%;
+        }
+
+
+
+
+
+                
+    .listado2{
+        height: 460px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+                    .listado2__producto__a__div h3{
+                        font-size: 3.9mm;
+                    }
+                    .listado2__buttonDeCompra{
+                        width: 60%;
+                    }
+    
+
+
+
+
+    .listado4{
+        height: 300px;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 100%;
+    }
+    .listado4__producto__a{
+        grid-template-rows: 40% 60%;
+    }
+    
+        .listado4__div__img1, .listado4__div__img2, .listado4__div__img3{
+            width: 45%;
+        }
+}
+        
+/* ------------------------------responsive celular ---------------------------------------------------------------------*/
+
+@media(max-width:764px){
+
+
+.ProductosMejorPuntuado{
+    height:380px;
+    background-position: top;
+}
+    .ProductosMejorPuntuado__div1{
+        width: 50%;
+        height: 300px;
+        background-color: rgba(243, 243, 243, 0.49);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        margin-right: 3%;
+        padding: 0;
+    }
+        .ProductosMejorPuntuado__div1 h3{
+            width: 70%;
+            margin: 5% 0 0 15%;
+            height: 70%;
+            font-size: 5.3mm;
+            display: block;
+        }
+        .button-Estrellas{
+            flex-direction: column;
+        }
+        .button-Estrellas div{
+            width: 70%;
+        }
+        .img{
+            margin-top: 10px;
+            width: 50%;
+            height: 50%;
+        }
+
+    .ProductosMejorPuntuado__div2{
+        padding: 0;
+        width: 50%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+        .ProductosMejorPuntuado__div2 img{
+            width: 90%;
+            object-fit: contain;
+        }
+
+
+
+
+
+
+
+
+
+    .Listado1{
+        flex-direction: column;
+    }
+        .listado1__producto{
+            width: 100%;
+            background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+            background-position: top;
+            background-size: 4px 1px;
+            background-repeat: repeat-x;
+        }
+            .listado1__producto__a{
+            }
+            .listado1__producto__a:hover{
+
+            }
+                .listado1__producto__a__div1{
+                    height: 40%;
+                    padding: 70px 0 20px 0;
+                }
+                    .listado1__producto__a__div1__img1{
+                        width: 35%;
+                    }.listado1__producto__a__div1__img2{
+                        width: 28%;
+                    }
+                    .listado1__producto__a__div1__img3{
+                        width: 50%;
+                    }
+                    .listado1__producto__a__div1__img4{
+                        width: 60%;
+                    }
+                .listado1__producto__a__div2{
+                    height: 60%;
+                    margin: 30px 0 40px 0;
+                }
+                    .listado1__producto__a__div2 h4{
+                        font-size: 4.8mm;
+                    }
+                    .listado1__producto__a__div2__caracteristicas{
+
+                        text-decoration: underline rgb(255, 255, 255) 1px;
+                    }
+                    .listado1__producto__a__div2__caracteristicas ul{
+                        margin-top: 5px;
+                    }
+                        .listado1__producto__a__div2__caracteristicas ul li{
+                            font-size: 4.5mm;
+                        }
+                    .buttonDeCompra{
+                        font-size: 5mm;
+                        width: 40%;
+                        height: 30px;
+                    }
+                    .buttonDeCompra:hover{
+                    }
+
+
+
+
+
+
+
+        
+    .listado2{
+        height: 800px;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+                    .listado2__producto__a__div h4{
+                        font-size: 3.9mm;
+                    }
+                    .listado2__buttonDeCompra{
+                        width: 60%;
+                    }
+
+
+
+
+
+
+
+
+        .listado3{
+            display: grid;
+            height: 1100px;
+            margin-top: 20px;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 25% 25% 25%;
+            /* background-color: aqua; */
+        }
+            .listado3__producto__a__div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .listado3__producto__a__div h4{
+                font-family:cooperLightBT ;
+                font-weight: 100;
+                display: block;
+                width: 60%;
+                text-align: center;
+                padding: 10px;
+                font-size: 4mm;
+            }
+            .listado2__producto__a__div{
+                display: flex;
+                justify-content: space-around;
+            }
+    
+            
+
+
+
+
+
+            /* listado 3 productos una fila ---------------------------------------------------------------------------------------------------------------*/
+
+.listado4{
+    height: 1000px;
+    grid-template-columns: 100%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+.listado4__producto__a{
+    grid-template-rows: 55% 45%;
+}
+
+    .listado4__div__img1, .listado4__div__img2, .listado4__div__img3{
+        width: 45%;
+    }
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+}
